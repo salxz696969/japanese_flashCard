@@ -134,6 +134,7 @@ const App = () => {
       setAnswerColor("red");
     }
   }
+
   function backWard() {
     normalOrRemember === "normal"
       ? cardID == 0
@@ -152,6 +153,7 @@ const App = () => {
       : cardID == flashCard.length - 1
       ? setCardID(cardID)
       : setCardID(cardID + 1);
+      setAnswerColor("")
   }
   const handleClick = (e) => {
     if (e.key === "Enter" && normalOrRemember === "normal") {
