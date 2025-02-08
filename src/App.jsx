@@ -118,7 +118,7 @@ const App = () => {
       }}
     >
       <button
-        style={{ height: "500px", width: "400px", fontSize: "4rem" }}
+        style={{ height: "500px", width: "374px", fontSize: "4rem" }}
         onClick={updateFrontAndBack}
       >
         {normalOrRemember == "normal"
@@ -127,7 +127,7 @@ const App = () => {
       </button>
       <div style={{ marginTop: "10px" }}>
         <button
-          style={{ height: "50px", width: "198px", margin: "2px" }}
+          style={{ height: "50px", width: "185px", margin: "2px" }}
           onClick={() =>
             normalOrRemember === "normal"
               ? cardID == 0
@@ -150,20 +150,20 @@ const App = () => {
               ? setCardID(cardID)
               : setCardID(cardID + 1)
           }
-          style={{ height: "50px", width: "198px", margin: "2px" }}
+          style={{ height: "50px", width: "185px", margin: "2px" }}
         >
           {">"}
         </button>
         <br />
         <button
           onClick={() => moveToRememberList(cardID)}
-          style={{ height: "50px", width: "198px", margin: "2px" }}
+          style={{ height: "50px", width: "185px", margin: "2px" }}
         >
           Remember
         </button>
         <button
           onClick={() => changeNormalOrRemember()}
-          style={{ height: "50px", width: "198px", margin: "2px" }}
+          style={{ height: "50px", width: "185px", margin: "2px" }}
         >
           Show {normalOrRemember === "normal" ? "remember" : "normal"}
         </button>
