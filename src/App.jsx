@@ -28,7 +28,7 @@ const vocabulary = [
   { back: "ようじ", front: "tasks, things to do" },
   { back: "よく", front: "often, well" },
   { back: "どんな", front: "which one" },
-  { back: "~から", front: "because, from" },
+  { back: "から", front: "because, from" },
   { back: "はやく", front: "fast, early, quickly" },
   { back: "きれい", front: "beautiful, clean" },
   { back: "しずか", front: "quiet" },
@@ -81,7 +81,7 @@ const vocabulary = [
   { back: "とても", front: "very" },
   { back: "あまり", front: "not so (used with negatives)" },
   { back: "そして", front: "and (used to connect sentences)" },
-  { back: "〜が", front: "~, but ~" },
+  { back: "が", front: "~, but ~" },
 ];
 
 const grammar = [
