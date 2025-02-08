@@ -185,7 +185,7 @@ const App = () => {
         <input
           id="inputBtn"
           type="text"
-          style={{ width: "240px", margin: "2px" }}
+          style={{ width: "200px", margin: "2px" }}
           onChange={(e) => setAnswer(e.target.value)}
           onKeyDown={handleClick}
         />
