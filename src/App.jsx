@@ -172,7 +172,7 @@ const App = () => {
     >
       <button
         style={{
-          height: "500px",
+          height: "200px",
           width: "374px",
           fontSize: "4rem",
           backgroundColor: `${answerColor}`,
