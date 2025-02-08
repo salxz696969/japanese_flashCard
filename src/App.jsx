@@ -191,7 +191,7 @@ const App = () => {
     }
   }
   function checkAnswer() {
-    if (answer === flashCard[cardID]["front"]) {
+    if (answer === flashCard[cardID]["back"]) {
       setAnswerColor("green");
       setAnswer("");
       setTimeout(() => {
