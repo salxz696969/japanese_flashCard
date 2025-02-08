@@ -70,6 +70,8 @@ const App = () => {
   const [flashCard, setFlashCard] = useState(data);
   const [rememberList, setRememberList] = useState([]);
   const [normalOrRemember, setNormalOrRemember] = useState("normal");
+  const [answer, setAnswer] = useState("");
+  const [answerColor, setAnswerColor] = useState("");
   const changeNormalOrRemember = () => {
     if (normalOrRemember === "normal" && rememberList.length > 0) {
       setNormalOrRemember("remember");
@@ -84,8 +86,8 @@ const App = () => {
       setFrontOrBack("front");
     }
   };
-  const moveToRememberList = (indexToRemove) => {
-    if(normalOrRemember==="remember"){
+  const moveToRememberList = () => {
+    if (normalOrRemember === "remember") {
       return;
     }
     let cardToMove = flashCard[cardID];
@@ -101,11 +103,60 @@ const App = () => {
     }
     if (cardID === flashCard.length - 1) {
       setCardID(cardID - 1);
-      setFlashCard(flashCard.filter((_, index) => index !== indexToRemove));
+      setFlashCard(flashCard.filter((_, index) => index !== cardID));
       setRememberList([...rememberList, cardToMove]);
     }
-    setFlashCard(flashCard.filter((_, index) => index !== indexToRemove));
+    setFlashCard(flashCard.filter((_, index) => index !== cardID));
     setRememberList([...rememberList, cardToMove]);
+  };
+  function shuffle() {
+    if (normalOrRemember === "normal") {
+      for (let i = flashCard.length - 1; i > 0; i--) {
+        let j = Math.floor(Math.random() * (i + 1));
+        [flashCard[i], flashCard[j]] = [flashCard[j], flashCard[i]];
+      }
+    } else {
+      for (let i = remCardID.length - 1; i > 0; i--) {
+        let j = Math.floor(Math.random() * (i + 1));
+        [remCardID[i], remCardID[j]] = [remCardID[j], remCardID[i]];
+      }
+    }
+  }
+  function checkAnswer() {
+    if (answer === flashCard[cardID]["front"]) {
+      setAnswerColor("green");
+      setAnswer("");
+      setTimeout(() => {
+        setAnswerColor("");
+        moveToRememberList();
+      }, 500);
+    } else {
+      setAnswerColor("red");
+    }
+  }
+  function backWard() {
+    normalOrRemember === "normal"
+      ? cardID == 0
+        ? setCardID(cardID)
+        : setCardID(cardID - 1)
+      : cardID == 0
+      ? setRemCardID(cardID)
+      : setRemCardID(cardID - 1);
+    setAnswerColor("");
+  }
+  function forward() {
+    normalOrRemember === "remember"
+      ? remCardID === rememberList.length - 1
+        ? setRemCardID(remCardID)
+        : setRemCardID(remCardID + 1)
+      : cardID == flashCard.length - 1
+      ? setCardID(cardID)
+      : setCardID(cardID + 1);
+  }
+  const handleClick = (e) => {
+    if (e.key === "Enter" && normalOrRemember === "normal") {
+      document.getElementById("submitBtn").click();
+    }
   };
   return (
     <div
@@ -118,54 +169,68 @@ const App = () => {
       }}
     >
       <button
-        style={{ height: "500px", width: "374px", fontSize: "4rem" }}
+        style={{
+          height: "500px",
+          width: "374px",
+          fontSize: "4rem",
+          backgroundColor: `${answerColor}`,
+        }}
         onClick={updateFrontAndBack}
       >
         {normalOrRemember == "normal"
           ? flashCard[cardID][frontOrBack]
           : rememberList[remCardID][frontOrBack]}
       </button>
+      <div>
+        <input
+          id="inputBtn"
+          type="text"
+          style={{ width: "250px", margin: "2px" }}
+          onChange={(e) => setAnswer(e.target.value)}
+          onKeyDown={handleClick}
+        />
+        <button
+          id="submitBtn"
+          style={{ width: "110px", margin: "2px" }}
+          onClick={() => checkAnswer()}
+        >
+          Submit
+        </button>
+      </div>
+      <br />
+      <br />
+      <br />
       <div style={{ marginTop: "10px" }}>
         <button
           style={{ height: "50px", width: "185px", margin: "2px" }}
-          onClick={() =>
-            normalOrRemember === "normal"
-              ? cardID == 0
-                ? setCardID(cardID)
-                : setCardID(cardID - 1)
-              : cardID == 0
-              ? setRemCardID(cardID)
-              : setRemCardID(cardID - 1)
-          }
+          onClick={() => backWard()}
         >
           {"<"}
         </button>
         <button
-          onClick={() =>
-            normalOrRemember === "remember"
-              ? remCardID === rememberList.length - 1
-                ? setRemCardID(remCardID)
-                : setRemCardID(remCardID + 1)
-              : cardID == flashCard.length - 1
-              ? setCardID(cardID)
-              : setCardID(cardID + 1)
-          }
+          onClick={() => forward()}
           style={{ height: "50px", width: "185px", margin: "2px" }}
         >
           {">"}
         </button>
         <br />
         <button
-          onClick={() => moveToRememberList(cardID)}
-          style={{ height: "50px", width: "185px", margin: "2px" }}
+          onClick={() => moveToRememberList()}
+          style={{ height: "50px", width: "122px", margin: "2px" }}
         >
           Remember
         </button>
         <button
           onClick={() => changeNormalOrRemember()}
-          style={{ height: "50px", width: "185px", margin: "2px" }}
+          style={{ height: "50px", width: "122px", margin: "2px" }}
         >
           Show {normalOrRemember === "normal" ? "remember" : "normal"}
+        </button>
+        <button
+          onClick={() => shuffle()}
+          style={{ height: "50px", width: "122px", margin: "2px" }}
+        >
+          Shuffle
         </button>
       </div>
     </div>
