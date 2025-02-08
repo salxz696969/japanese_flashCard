@@ -1,73 +1,141 @@
 import { useState } from "react";
-const data = [
-  { front: "ハンサム", back: "handsome" },
-  { front: "きれい", back: "beautiful, clean" },
-  { front: "しずか", back: "quiet" },
-  { front: "にぎやか", back: "lively" },
-  { front: "ゆうめい", back: "famous" },
-  { front: "しんせつ", back: "kind" },
-  { front: "げんき", back: "healthy, sound, cheerful" },
-  { front: "ひま", back: "free (time)" },
-  { front: "べんり", back: "convenient" },
-  { front: "すてき", back: "fine, nice, wonderful" },
-  { front: "おおきい", back: "big, large" },
-  { front: "ちいさい", back: "small, little" },
-  { front: "あたらしい", back: "new" },
-  { front: "ふるい", back: "old (not of age)" },
-  { front: "いい (よい)", back: "good" },
-  { front: "わるい", back: "bad" },
-  { front: "あつい", back: "hot" },
-  { front: "さむい", back: "cold (temperature)" },
-  { front: "つめたい", back: "cold (to the touch)" },
-  { front: "むずかしい", back: "difficult" },
-  { front: "やさしい", back: "easy" },
-  { front: "たかい", back: "expensive, tall, high" },
-  { front: "やすい", back: "inexpensive" },
-  { front: "ひくい", back: "low" },
-  { front: "おもしろい", back: "interesting" },
-  { front: "おいしい", back: "delicious, tasty" },
-  { front: "いそがしい", back: "busy" },
-  { front: "たのしい", back: "enjoyable" },
-  { front: "しろい", back: "white" },
-  { front: "くろい", back: "black" },
-  { front: "あかい", back: "red" },
-  { front: "あおい", back: "blue" },
-  { front: "さくら", back: "cherry blossom" },
-  { front: "やま", back: "mountain" },
-  { front: "まち", back: "town, city" },
-  { front: "たべもの", back: "food" },
-  { front: "くるま", back: "car, vehicle" },
-  { front: "ところ", back: "place" },
-  { front: "りょう", back: "dormitory" },
-  { front: "べんきょう", back: "study" },
-  { front: "せいかつ", back: "life" },
-  { front: "しごと", back: "work, business" },
-  { front: "どう", back: "how" },
-  { front: "どんな", back: "what kind of" },
-  { front: "どれ", back: "which one (of three or more)" },
-  { front: "とても", back: "very" },
-  { front: "あまり", back: "not so (used with negatives)" },
-  { front: "そして", back: "and (used to connect sentences)" },
-  { front: "〜が、〜", back: "~, but ~" },
-  { front: "おげんきですか", back: "How are you?" },
-  { front: "そうですね", back: "Well, let me see. (pausing)" },
-  {
-    front: "にほんのせいかつになれましたか",
-    back: "Have you got used to life in Japan?",
-  },
-  {
-    front: "もういっぱいいかがですか",
-    back: "Won't you have another cup of ~?",
-  },
-  { front: "いいえ、けっこうです", back: "No, thank you." },
-  { front: "もう〜ですね", back: "It's already ~, isn't it?" },
-  { front: "そろそろしつれいします", back: "It's almost time to leave now." },
+const vocabulary = [
+  { back: "ハンサム", front: "handsome" },
+  { back: "すき", front: "like" },
+  { back: "きらい", front: "dislike" },
+  { back: "わかります", front: "understand" },
+  { back: "じょうず", front: "good at" },
+  { back: "へた", front: "bad at" },
+  { back: "りょり", front: "cooking, cuisine" },
+  { back: "のみもの", front: "drinks" },
+  { back: "たべもの", front: "foods" },
+  { back: "おんがく", front: "music" },
+  { back: "うた", front: "song" },
+  { back: "え", front: "picture" },
+  { back: "もしもし", front: "hello(using on phone)" },
+  { back: "どうして", front: "why, what is the reason" },
+  { back: "どう", front: "how" },
+  { back: "ぜんぜん", front: "not at all" },
+  { back: "すこし", front: "little bit" },
+  { back: "たくさん", front: "many, a lot" },
+  { back: "だいたい", front: "almost, general, substantially, about much" },
+  { back: "くども", front: "children" },
+  { back: "おくさん", front: "your wife, his wife, wife" },
+  { back: "うま/かない", front: "(my) wife" },
+  { back: "おっゅじん", front: "(my) husband" },
+  { back: "ごしゅじん", front: "(your) husband" },
+  { back: "やくそく", front: "promise, agreement" },
+  { back: "ようじ", front: "tasks, things to do" },
+  { back: "よく", front: "often, well" },
+  { back: "どんな", front: "which one" },
+  { back: "~から", front: "because, from" },
+  { back: "はやく", front: "fast, early, quickly" },
+  { back: "きれい", front: "beautiful, clean" },
+  { back: "しずか", front: "quiet" },
+  { back: "にぎやか", front: "lively" },
+  { back: "ゆうめい", front: "famous" },
+  { back: "しんせつ", front: "kind" },
+  { back: "げんき", front: "healthy, sound, cheerful" },
+  { back: "ひま", front: "free (time)" },
+  { back: "べんり", front: "convenient" },
+  { back: "すてき", front: "fine, nice, wonderful" },
+  { back: "おおきい", front: "big, large" },
+  { back: "ちいさい", front: "small, little" },
+  { back: "あたらしい", front: "new" },
+  { back: "あります", front: "have" },
+  { back: "やきゅう", front: "baseball" },
+  { back: "りょこう", front: "trip" },
+  { back: "じ", front: "character(language)" },
+  { back: "じかん", front: "time,  hour" },
+  { back: "ふるい", front: "old (not of age)" },
+  { back: "いい (よい)", front: "good" },
+  { back: "わるい", front: "bad" },
+  { back: "あつい", front: "hot" },
+  { back: "さむい", front: "cold (temperature)" },
+  { back: "つめたい", front: "cold (to the touch)" },
+  { back: "むずかしい", front: "difficult" },
+  { back: "やさしい", front: "easy" },
+  { back: "たかい", front: "expensive, tall, high" },
+  { back: "やすい", front: "inexpensive" },
+  { back: "ひくい", front: "low" },
+  { back: "おもしろい", front: "interesting" },
+  { back: "おいしい", front: "delicious, tasty" },
+  { back: "いそがしい", front: "busy" },
+  { back: "たのしい", front: "enjoyable" },
+  { back: "しろい", front: "white" },
+  { back: "くろい", front: "black" },
+  { back: "あかい", front: "red" },
+  { back: "あおい", front: "blue" },
+  { back: "さくら", front: "cherry blossom" },
+  { back: "やま", front: "mountain" },
+  { back: "まち", front: "town, city" },
+  { back: "くるま", front: "car, vehicle" },
+  { back: "ところ", front: "place" },
+  { back: "りょう", front: "dormitory" },
+  { back: "べんきょう", front: "study" },
+  { back: "せいかつ", front: "life" },
+  { back: "しごと", front: "work, business" },
+  { back: "どう", front: "how" },
+  { back: "どんな", front: "what kind of" },
+  { back: "どれ", front: "which one (of three or more)" },
+  { back: "とても", front: "very" },
+  { back: "あまり", front: "not so (used with negatives)" },
+  { back: "そして", front: "and (used to connect sentences)" },
+  { back: "〜が", front: "~, but ~" },
 ];
+
+const grammar = [
+  { front: "これは ____ ですか？", back: "なん" },  
+  { front: "あなたのしごとは ____ ですか？", back: "なん" },  
+  { front: "たんじょうびは ____ ですか？", back: "いつ" },  
+  { front: "テストは ____ ですか？", back: "いつ" },  
+  { front: "がっこうは ____ ですか？", back: "どこ" },  
+  { front: "あなたのいえは ____ ですか？", back: "どこ" },  
+  { front: "おかねは ____ ですか？", back: "どこ" },  
+  { front: "このほんは ____ ですか？", back: "だれ" },  
+  { front: "あのひとは ____ ですか？", back: "だれ" },  
+  { front: "すきなたべものは ____ ですか？", back: "なに" },  
+  { front: "いちばんすきないろは ____ ですか？", back: "なに" },  
+  { front: "にほんごのせんせいは ____ ですか？", back: "だれ" },  
+  { front: "スーパーは ____ ですか？", back: "どこ" },  
+  { front: "そのかばんは ____ のですか？", back: "だれ" },  
+  { front: "いまは ____ ですか？", back: "なんじ" },  
+  { front: "これは ____ いろですか？", back: "なに" },  
+  { front: "いちばんすきなスポーツは ____ ですか？", back: "なに" },  
+  { front: "ひるごはんは ____ たべますか？", back: "なに" },  
+  { front: "きょうのてんきは ____ ですか？", back: "どう" },  
+  { front: "りょうりが ____ ですか？", back: "どう" },  
+  { front: "きのうは ____ でしたか？", back: "どう" },  
+  { front: "あのひとは ____ ひとですか？", back: "どんな" },  
+  { front: "これは ____ えいがですか？", back: "どんな" },  
+  { front: "あなたのまちは ____ ところですか？", back: "どんな" },  
+  { front: "どうしてがっこうにいきませんでしたか？", back: "どうして" },  
+  { front: "どうしてさかなをたべませんか？", back: "どうして" },  
+  { front: "どうしておそくきましたか？", back: "どうして" },  
+  { front: "これは ____ ですか？", back: "なん" },  
+  { front: "だれがせんせいですか？", back: "だれ" },  
+  { front: "いちばんすきなきせつは ____ ですか？", back: "なに" },  
+  { front: "あなたのへやは ____ ですか？", back: "どんな" },  
+  { front: "にほんごのべんきょうは ____ ですか？", back: "どう" },  
+  { front: "けいたいでんわは ____ ですか？", back: "どこ" },  
+  { front: "あなたのたんじょうびは ____ ですか？", back: "いつ" },  
+  { front: "すきなえいがは ____ ですか？", back: "なに" },  
+  { front: "あなたのしゅみは ____ ですか？", back: "なに" },  
+  { front: "あなたのくつは ____ ですか？", back: "どれ" },  
+  { front: "あしたのよていは ____ ですか？", back: "なに" },  
+  { front: "かぞくは ____ にいますか？", back: "どこ" },  
+  { front: "いちばんすきなくだものは ____ ですか？", back: "なに" },  
+  { front: "あのレストランは ____ ですか？", back: "どう" },  
+  { front: "きょうのしゅくだいは ____ ですか？", back: "なに" },  
+  { front: "おんがくは ____ すきですか？", back: "どんな" },  
+  { front: "あなたのともだちは ____ ひとですか？", back: "どんな" },  
+];
+
 const App = () => {
   const [cardID, setCardID] = useState(0);
   const [remCardID, setRemCardID] = useState(0);
   const [frontOrBack, setFrontOrBack] = useState("front");
-  const [flashCard, setFlashCard] = useState(data);
+  const [flashCard, setFlashCard] = useState(vocabulary);
   const [rememberList, setRememberList] = useState([]);
   const [normalOrRemember, setNormalOrRemember] = useState("normal");
   const [answer, setAnswer] = useState("");
@@ -95,8 +163,8 @@ const App = () => {
       setFlashCard([{ front: "", back: "" }]);
       setFlashCard([
         {
-          front: "ありがとう！何か練習したいことがあれば聞いてね！💪✨",
-          back: "Congrats, you have learnt every word!💪✨",
+          back: "ありがとう！何か練習したいことがあれば聞いてね！💪✨",
+          front: "Congrats, you have learnt every word!💪✨",
         },
       ]);
       return;
@@ -216,19 +284,19 @@ const App = () => {
         <br />
         <button
           onClick={() => moveToRememberList()}
-          style={{ height: "50px", width: "122px", margin: "2px" }}
+          style={{ height: "50px", width: "185px", margin: "2px" }}
         >
           Remember
         </button>
         <button
           onClick={() => changeNormalOrRemember()}
-          style={{ height: "50px", width: "122px", margin: "2px" }}
+          style={{ height: "50px", width: "185px", margin: "2px" }}
         >
           Show {normalOrRemember === "normal" ? "remember" : "normal"}
         </button>
         <button
           onClick={() => shuffle()}
-          style={{ height: "50px", width: "122px", margin: "2px" }}
+          style={{ height: "50px", width: "185px", margin: "2px" }}
         >
           Shuffle
         </button>
