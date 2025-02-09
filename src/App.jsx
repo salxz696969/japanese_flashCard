@@ -1,7 +1,7 @@
 import { useState } from "react";
 const vocabulary = [
-  { back: "ハンサム", front: "handsome" },
   { back: "すき", front: "like" },
+  { back: "ハンサム", front: "handsome" },
   { back: "きらい", front: "dislike" },
   { back: "わかります", front: "understand" },
   { back: "じょうず", front: "good at" },
@@ -85,56 +85,57 @@ const vocabulary = [
 ];
 
 const grammar = [
-  { front: "これは ____ ですか？", back: "なん" },  
-  { front: "あなたのしごとは ____ ですか？", back: "なん" },  
-  { front: "たんじょうびは ____ ですか？", back: "いつ" },  
-  { front: "テストは ____ ですか？", back: "いつ" },  
-  { front: "がっこうは ____ ですか？", back: "どこ" },  
-  { front: "あなたのいえは ____ ですか？", back: "どこ" },  
-  { front: "おかねは ____ ですか？", back: "どこ" },  
-  { front: "このほんは ____ ですか？", back: "だれ" },  
-  { front: "あのひとは ____ ですか？", back: "だれ" },  
-  { front: "すきなたべものは ____ ですか？", back: "なに" },  
-  { front: "いちばんすきないろは ____ ですか？", back: "なに" },  
-  { front: "にほんごのせんせいは ____ ですか？", back: "だれ" },  
-  { front: "スーパーは ____ ですか？", back: "どこ" },  
-  { front: "そのかばんは ____ のですか？", back: "だれ" },  
-  { front: "いまは ____ ですか？", back: "なんじ" },  
-  { front: "これは ____ いろですか？", back: "なに" },  
-  { front: "いちばんすきなスポーツは ____ ですか？", back: "なに" },  
-  { front: "ひるごはんは ____ たべますか？", back: "なに" },  
-  { front: "きょうのてんきは ____ ですか？", back: "どう" },  
-  { front: "りょうりが ____ ですか？", back: "どう" },  
-  { front: "きのうは ____ でしたか？", back: "どう" },  
-  { front: "あのひとは ____ ひとですか？", back: "どんな" },  
-  { front: "これは ____ えいがですか？", back: "どんな" },  
-  { front: "あなたのまちは ____ ところですか？", back: "どんな" },  
-  { front: "どうしてがっこうにいきませんでしたか？", back: "どうして" },  
-  { front: "どうしてさかなをたべませんか？", back: "どうして" },  
-  { front: "どうしておそくきましたか？", back: "どうして" },  
-  { front: "これは ____ ですか？", back: "なん" },  
-  { front: "だれがせんせいですか？", back: "だれ" },  
-  { front: "いちばんすきなきせつは ____ ですか？", back: "なに" },  
-  { front: "あなたのへやは ____ ですか？", back: "どんな" },  
-  { front: "にほんごのべんきょうは ____ ですか？", back: "どう" },  
-  { front: "けいたいでんわは ____ ですか？", back: "どこ" },  
-  { front: "あなたのたんじょうびは ____ ですか？", back: "いつ" },  
-  { front: "すきなえいがは ____ ですか？", back: "なに" },  
-  { front: "あなたのしゅみは ____ ですか？", back: "なに" },  
-  { front: "あなたのくつは ____ ですか？", back: "どれ" },  
-  { front: "あしたのよていは ____ ですか？", back: "なに" },  
-  { front: "かぞくは ____ にいますか？", back: "どこ" },  
-  { front: "いちばんすきなくだものは ____ ですか？", back: "なに" },  
-  { front: "あのレストランは ____ ですか？", back: "どう" },  
-  { front: "きょうのしゅくだいは ____ ですか？", back: "なに" },  
-  { front: "おんがくは ____ すきですか？", back: "どんな" },  
-  { front: "あなたのともだちは ____ ひとですか？", back: "どんな" },  
+  { front: "これは ____ ですか？", back: "なん" },
+  { front: "あなたのしごとは ____ ですか？", back: "なん" },
+  { front: "たんじょうびは ____ ですか？", back: "いつ" },
+  { front: "テストは ____ ですか？", back: "いつ" },
+  { front: "がっこうは ____ ですか？", back: "どこ" },
+  { front: "あなたのいえは ____ ですか？", back: "どこ" },
+  { front: "おかねは ____ ですか？", back: "どこ" },
+  { front: "このほんは ____ ですか？", back: "だれ" },
+  { front: "あのひとは ____ ですか？", back: "だれ" },
+  { front: "すきなたべものは ____ ですか？", back: "なに" },
+  { front: "いちばんすきないろは ____ ですか？", back: "なに" },
+  { front: "にほんごのせんせいは ____ ですか？", back: "だれ" },
+  { front: "スーパーは ____ ですか？", back: "どこ" },
+  { front: "そのかばんは ____ のですか？", back: "だれ" },
+  { front: "いまは ____ ですか？", back: "なんじ" },
+  { front: "これは ____ いろですか？", back: "なに" },
+  { front: "いちばんすきなスポーツは ____ ですか？", back: "なに" },
+  { front: "ひるごはんは ____ たべますか？", back: "なに" },
+  { front: "きょうのてんきは ____ ですか？", back: "どう" },
+  { front: "りょうりが ____ ですか？", back: "どう" },
+  { front: "きのうは ____ でしたか？", back: "どう" },
+  { front: "あのひとは ____ ひとですか？", back: "どんな" },
+  { front: "これは ____ えいがですか？", back: "どんな" },
+  { front: "あなたのまちは ____ ところですか？", back: "どんな" },
+  { front: "どうしてがっこうにいきませんでしたか？", back: "どうして" },
+  { front: "どうしてさかなをたべませんか？", back: "どうして" },
+  { front: "どうしておそくきましたか？", back: "どうして" },
+  { front: "これは ____ ですか？", back: "なん" },
+  { front: "だれがせんせいですか？", back: "だれ" },
+  { front: "いちばんすきなきせつは ____ ですか？", back: "なに" },
+  { front: "あなたのへやは ____ ですか？", back: "どんな" },
+  { front: "にほんごのべんきょうは ____ ですか？", back: "どう" },
+  { front: "けいたいでんわは ____ ですか？", back: "どこ" },
+  { front: "あなたのたんじょうびは ____ ですか？", back: "いつ" },
+  { front: "すきなえいがは ____ ですか？", back: "なに" },
+  { front: "あなたのしゅみは ____ ですか？", back: "なに" },
+  { front: "あなたのくつは ____ ですか？", back: "どれ" },
+  { front: "あしたのよていは ____ ですか？", back: "なに" },
+  { front: "かぞくは ____ にいますか？", back: "どこ" },
+  { front: "いちばんすきなくだものは ____ ですか？", back: "なに" },
+  { front: "あのレストランは ____ ですか？", back: "どう" },
+  { front: "きょうのしゅくだいは ____ ですか？", back: "なに" },
+  { front: "おんがくは ____ すきですか？", back: "どんな" },
+  { front: "あなたのともだちは ____ ひとですか？", back: "どんな" },
 ];
 
 const App = () => {
   const [cardID, setCardID] = useState(0);
   const [remCardID, setRemCardID] = useState(0);
   const [frontOrBack, setFrontOrBack] = useState("front");
+  const [grammarOrVocab, setGrammarOrVocab] = useState("Vocabulary");
   const [flashCard, setFlashCard] = useState(vocabulary);
   const [rememberList, setRememberList] = useState([]);
   const [normalOrRemember, setNormalOrRemember] = useState("normal");
@@ -190,7 +191,8 @@ const App = () => {
       }
     }
   }
-  function checkAnswer() {
+  function checkAnswer(e) {
+    setAnswer(e);
     if (answer === flashCard[cardID]["back"]) {
       setAnswerColor("green");
       setAnswer("");
@@ -198,8 +200,6 @@ const App = () => {
         setAnswerColor("");
         moveToRememberList();
       }, 500);
-    } else {
-      setAnswerColor("red");
     }
   }
 
@@ -221,13 +221,22 @@ const App = () => {
       : cardID == flashCard.length - 1
       ? setCardID(cardID)
       : setCardID(cardID + 1);
-      setAnswerColor("")
+    setAnswerColor("");
   }
   const handleClick = (e) => {
     if (e.key === "Enter" && normalOrRemember === "normal") {
       document.getElementById("submitBtn").click();
     }
   };
+  function handleGrammarOrVocab() {
+    if (grammarOrVocab === "Vocabulary") {
+      setFlashCard(grammar);
+      setGrammarOrVocab("Grammar");
+    } else {
+      setFlashCard(vocabulary);
+      setGrammarOrVocab("Vocabulary");
+    }
+  }
   return (
     <div
       style={{
@@ -242,7 +251,7 @@ const App = () => {
         style={{
           height: "200px",
           width: "374px",
-          fontSize: "4rem",
+          fontSize: "2rem",
           backgroundColor: `${answerColor}`,
         }}
         onClick={updateFrontAndBack}
@@ -255,17 +264,18 @@ const App = () => {
         <input
           id="inputBtn"
           type="text"
-          style={{ width: "200px", margin: "2px",  fontSize: "16px"  }}
-          onChange={(e) => setAnswer(e.target.value)}
+          style={{ width: "200px", margin: "2px", fontSize: "16px" }}
+          value={answer}
+          onChange={(e) => checkAnswer(e.target.value)}
           onKeyDown={handleClick}
         />
-        <button
+        {/* <button
           id="submitBtn"
           style={{ width: "110px", margin: "2px" }}
           onClick={() => checkAnswer()}
         >
           Submit
-        </button>
+        </button> */}
       </div>
       <br />
       <div style={{ marginTop: "10px" }}>
@@ -299,6 +309,12 @@ const App = () => {
           style={{ height: "50px", width: "185px", margin: "2px" }}
         >
           Shuffle
+        </button>
+        <button
+          onClick={() => handleGrammarOrVocab()}
+          style={{ height: "50px", width: "185px", margin: "2px" }}
+        >
+          {grammarOrVocab === "grammar" ? "Vocabulary mode" : "Grammar Mode"}
         </button>
       </div>
     </div>
