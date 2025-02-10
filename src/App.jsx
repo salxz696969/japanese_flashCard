@@ -1,4 +1,4 @@
-import {useState } from "react";
+import {useEffect, useState } from "react";
 import vocabListFromFile from "./vocab.json"
 import grammarListFromFile from "./grammar.json"
 
@@ -9,40 +9,33 @@ const App = () => {
   const [remCardID, setRemCardID] = useState(0);
   const [frontOrBack, setFrontOrBack] = useState("front");
   const [grammarOrVocab, setGrammarOrVocab] = useState("Vocabulary");
-  const [flashCard, setFlashCard] = useState(vocabListFromFile);
   const [rememberList, setRememberList] = useState([]);
-  const vocabList=vocabListFromFile;
-  const grammarList=grammarListFromFile;
+  const [vocabList, setVocabList]=useState([]);
+  const [grammarList, setGrammarList]=useState([]);
+  const [flashCard, setFlashCard] = useState(vocabList);
   const [normalOrRemember, setNormalOrRemember] = useState("normal");
   const [answer, setAnswer] = useState("");
   const [answerColor, setAnswerColor] = useState("");
-  
-  // useEffect(()=>{
-  //   const fetchVocab=async()=>{
-  //     try {
-  //       const response=await fetch("/src/vocab.json");
-  //       const fetchedVocab=await response.json();
-  //       setVocablist(fetchedVocab);
-  //       setFlashCard(fetchedVocab)
-  //     } catch (error) {
-  //       console.log(error)
-  //     }
-  //   }
-  //   fetchVocab();
-  // }, [])
-  // useEffect(()=>{
-  //   const fetchGrammar=async()=>{
-  //     try {
-  //       const response=await fetch("/src/grammar.json");
-  //       const fetchedGrammar=await response.json();
-  //       setGrammarList(fetchedGrammar);
-  //     } catch (error) {
-  //       console.log(error)
-  //     }
-  //   }
-  //   fetchGrammar();
-  // }, [])
 
+  useEffect(() => {
+    const localVocabList = localStorage.getItem("localVocabList");
+    if (localVocabList) {
+      setVocabList(JSON.parse(localVocabList));
+      setFlashCard(JSON.parse(localVocabList))
+    } else {
+      localStorage.setItem("localVocabList", JSON.stringify(vocabListFromFile));
+      setVocabList(vocabListFromFile);
+      setFlashCard(vocabListFromFile)
+    }
+
+    const localGrammarList = localStorage.getItem("localGrammarList");
+    if (localGrammarList) {
+      setGrammarList(JSON.parse(localGrammarList));
+    } else {
+      localStorage.setItem("localGrammarList", JSON.stringify(grammarListFromFile));
+      setGrammarList(grammarListFromFile);
+    }
+  }, []);
 
   const changeNormalOrRemember = () => {
     if (normalOrRemember === "normal" && rememberList.length > 0) {
@@ -75,10 +68,15 @@ const App = () => {
     if (cardID === flashCard.length - 1) {
       setCardID(cardID - 1);
       setFlashCard(flashCard.filter((_, index) => index !== cardID));
+      localStorage.setItem("localVocabList", JSON.stringify(flashCard))
       setRememberList([...rememberList, cardToMove]);
+      if(flashCard===vocabList){
+        setVocabList(flashCard.filter((_, index) => index !== cardID))
+      }
       return;
     }
     setFlashCard(flashCard.filter((_, index) => index !== cardID));
+    localStorage.setItem("localVocabList", JSON.stringify(flashCard))
     setRememberList([...rememberList, cardToMove]);
   };
   function shuffle() {
@@ -206,8 +204,93 @@ const App = () => {
         >
           {grammarOrVocab === "Grammar" ? "Vocabulary mode" : "Grammar Mode"}
         </button>
+          <button onClick={()=>console.log(localStorage.getItem("localVocabList"))}></button>
       </div>
     </div>
   );
 };
 export default App;
+// lesson 9 [
+//   { "back": "すき", "front": "like" },
+//   { "back": "ハンサム", "front": "handsome" },
+//   { "back": "きらい", "front": "dislike" },
+//   { "back": "わかります", "front": "understand" },
+//   { "back": "じょうず", "front": "good at" },
+//   { "back": "へた", "front": "bad at" },
+//   { "back": "りょり", "front": "cooking, cuisine" },
+//   { "back": "のみもの", "front": "drinks" },
+//   { "back": "たべもの", "front": "foods" },
+//   { "back": "おんがく", "front": "music" },
+//   { "back": "うた", "front": "song" },
+//   { "back": "え", "front": "picture" },
+//   { "back": "もしもし", "front": "hello(using on phone)" },
+//   { "back": "どうして", "front": "why, what is the reason" },
+//   { "back": "どう", "front": "how" },
+//   { "back": "ぜんぜん", "front": "not at all" },
+//   { "back": "すこし", "front": "little bit" },
+//   { "back": "たくさん", "front": "many, a lot" },
+//   { "back": "だいたい", "front": "almost, general, substantially, about much" },
+//   { "back": "くども", "front": "children" },
+//   { "back": "おくさん", "front": "your wife, his wife, wife" },
+//   { "back": "うま/かない", "front": "(my) wife" },
+//   { "back": "おっゅじん", "front": "(my) husband" },
+//   { "back": "ごしゅじん", "front": "(your) husband" },
+//   { "back": "やくそく", "front": "promise, agreement" },
+//   { "back": "ようじ", "front": "tasks, things to do" },
+//   { "back": "よく", "front": "often, well" },
+//   { "back": "どんな", "front": "which one" },
+//   { "back": "から", "front": "because, from" },
+//   { "back": "はやく", "front": "fast, early, quickly" },
+//   { "back": "きれい", "front": "beautiful, clean" },
+//   { "back": "しずか", "front": "quiet" },
+//   { "back": "にぎやか", "front": "lively" },
+//   { "back": "ゆうめい", "front": "famous" },
+//   { "back": "しんせつ", "front": "kind" },
+//   { "back": "げんき", "front": "healthy, sound, cheerful" },
+//   { "back": "ひま", "front": "free (time)" },
+//   { "back": "べんり", "front": "convenient" },
+//   { "back": "すてき", "front": "fine, nice, wonderful" },
+//   { "back": "おおきい", "front": "big, large" },
+//   { "back": "ちいさい", "front": "small, little" },
+//   { "back": "あたらしい", "front": "new" },
+//   { "back": "あります", "front": "have" },
+//   { "back": "やきゅう", "front": "baseball" },
+//   { "back": "りょこう", "front": "trip" },
+//   { "back": "じ", "front": "character(language)" },
+//   { "back": "じかん", "front": "time,  hour" },
+//   { "back": "ふるい", "front": "old (not of age)" },
+//   { "back": "いい (よい)", "front": "good" },
+//   { "back": "わるい", "front": "bad" },
+//   { "back": "あつい", "front": "hot" },
+//   { "back": "さむい", "front": "cold (temperature)" },
+//   { "back": "つめたい", "front": "cold (to the touch)" },
+//   { "back": "むずかしい", "front": "difficult" },
+//   { "back": "やさしい", "front": "easy" },
+//   { "back": "たかい", "front": "expensive, tall, high" },
+//   { "back": "やすい", "front": "inexpensive" },
+//   { "back": "ひくい", "front": "low" },
+//   { "back": "おもしろい", "front": "interesting" },
+//   { "back": "おいしい", "front": "delicious, tasty" },
+//   { "back": "いそがしい", "front": "busy" },
+//   { "back": "たのしい", "front": "enjoyable" },
+//   { "back": "しろい", "front": "white" },
+//   { "back": "くろい", "front": "black" },
+//   { "back": "あかい", "front": "red" },
+//   { "back": "あおい", "front": "blue" },
+//   { "back": "さくら", "front": "cherry blossom" },
+//   { "back": "やま", "front": "mountain" },
+//   { "back": "まち", "front": "town, city" },
+//   { "back": "くるま", "front": "car, vehicle" },
+//   { "back": "ところ", "front": "place" },
+//   { "back": "りょう", "front": "dormitory" },
+//   { "back": "べんきょう", "front": "study" },
+//   { "back": "せいかつ", "front": "life" },
+//   { "back": "しごと", "front": "work, business" },
+//   { "back": "どう", "front": "how" },
+//   { "back": "どんな", "front": "what kind of" },
+//   { "back": "どれ", "front": "which one (of three or more)" },
+//   { "back": "とても", "front": "very" },
+//   { "back": "あまり", "front": "not so (used with negatives)" },
+//   { "back": "そして", "front": "and (used to connect sentences)" },
+//   { "back": "が", "front": "~, but ~" }
+// ]
