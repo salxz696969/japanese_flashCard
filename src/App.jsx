@@ -1,5 +1,6 @@
-import { useEffect, useState } from "react";
-
+import {useState } from "react";
+import vocabListFromFile from "./vocab.json"
+import grammarListFromFile from "./grammar.json"
 
 
 
@@ -8,39 +9,40 @@ const App = () => {
   const [remCardID, setRemCardID] = useState(0);
   const [frontOrBack, setFrontOrBack] = useState("front");
   const [grammarOrVocab, setGrammarOrVocab] = useState("Vocabulary");
-  const [flashCard, setFlashCard] = useState([]);
+  const [flashCard, setFlashCard] = useState(vocabListFromFile);
   const [rememberList, setRememberList] = useState([]);
-  const [vocabList, setVocablist] = useState([]);
-  const [grammarList, setGrammarList] = useState([]);
+  const vocabList=vocabListFromFile;
+  const grammarList=grammarListFromFile;
   const [normalOrRemember, setNormalOrRemember] = useState("normal");
   const [answer, setAnswer] = useState("");
   const [answerColor, setAnswerColor] = useState("");
   
-  useEffect(()=>{
-    const fetchVocab=async()=>{
-      try {
-        const response=await fetch("/src/vocab.json");
-        const fetchedVocab=await response.json();
-        setVocablist(fetchedVocab);
-        setFlashCard(fetchedVocab)
-      } catch (error) {
-        console.log(error)
-      }
-    }
-    fetchVocab();
-  }, [])
-  useEffect(()=>{
-    const fetchGrammar=async()=>{
-      try {
-        const response=await fetch("/src/grammar.json");
-        const fetchedGrammar=await response.json();
-        setGrammarList(fetchedGrammar);
-      } catch (error) {
-        console.log(error)
-      }
-    }
-    fetchGrammar();
-  }, [])
+  // useEffect(()=>{
+  //   const fetchVocab=async()=>{
+  //     try {
+  //       const response=await fetch("/src/vocab.json");
+  //       const fetchedVocab=await response.json();
+  //       setVocablist(fetchedVocab);
+  //       setFlashCard(fetchedVocab)
+  //     } catch (error) {
+  //       console.log(error)
+  //     }
+  //   }
+  //   fetchVocab();
+  // }, [])
+  // useEffect(()=>{
+  //   const fetchGrammar=async()=>{
+  //     try {
+  //       const response=await fetch("/src/grammar.json");
+  //       const fetchedGrammar=await response.json();
+  //       setGrammarList(fetchedGrammar);
+  //     } catch (error) {
+  //       console.log(error)
+  //     }
+  //   }
+  //   fetchGrammar();
+  // }, [])
+
 
   const changeNormalOrRemember = () => {
     if (normalOrRemember === "normal" && rememberList.length > 0) {
@@ -140,14 +142,14 @@ const App = () => {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        width:"414px",
+        width:"100wh",
         height:"896px"
       }}
     >
       <button
         style={{
           height: "200px",
-          width: "300px",
+          width: "374px",
           fontSize: "2rem",
           backgroundColor: `${answerColor}`,
         }}
