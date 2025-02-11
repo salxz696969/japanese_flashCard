@@ -1,44 +1,72 @@
-import {useEffect, useState } from "react";
-import vocabListFromFile from "./vocab.json"
-import grammarListFromFile from "./grammar.json"
-
-
+import { useEffect, useState } from "react";
+import vocabListFromFile from "./vocab.json";
+import grammarListFromFile from "./grammar.json";
 
 const App = () => {
   const [cardID, setCardID] = useState(0);
   const [remCardID, setRemCardID] = useState(0);
   const [frontOrBack, setFrontOrBack] = useState("front");
   const [grammarOrVocab, setGrammarOrVocab] = useState("Vocabulary");
-  const [rememberList, setRememberList] = useState([]);
-  const [vocabList, setVocabList]=useState([]);
-  const [grammarList, setGrammarList]=useState([]);
-  const [flashCard, setFlashCard] = useState(vocabList);
+  const [rememberVocabList, setRememberVocabList] = useState([]);
+  const [rememberGrammarList, setRememberGrammarList] = useState([]);
+  const [vocabList, setVocabList] = useState([]);
+  const [grammarList, setGrammarList] = useState([]);
+  const [flashCard, setFlashCard] = useState([]);
   const [normalOrRemember, setNormalOrRemember] = useState("normal");
   const [answer, setAnswer] = useState("");
   const [answerColor, setAnswerColor] = useState("");
-
+  // localStorage.clear();
   useEffect(() => {
     const localVocabList = localStorage.getItem("localVocabList");
     if (localVocabList) {
-      setVocabList(JSON.parse(localVocabList));
-      setFlashCard(JSON.parse(localVocabList))
+      const parsedVocab = JSON.parse(localVocabList);
+      setVocabList(parsedVocab);
     } else {
       localStorage.setItem("localVocabList", JSON.stringify(vocabListFromFile));
       setVocabList(vocabListFromFile);
-      setFlashCard(vocabListFromFile)
     }
 
     const localGrammarList = localStorage.getItem("localGrammarList");
     if (localGrammarList) {
       setGrammarList(JSON.parse(localGrammarList));
     } else {
-      localStorage.setItem("localGrammarList", JSON.stringify(grammarListFromFile));
+      localStorage.setItem(
+        "localGrammarList",
+        JSON.stringify(grammarListFromFile)
+      );
       setGrammarList(grammarListFromFile);
     }
   }, []);
 
+  useEffect(() => {
+    if (vocabList.length > 0) {
+      setFlashCard(vocabList);
+      localStorage.setItem("localGrammarList", JSON.stringify(flashCard));
+    }
+  }, [vocabList, flashCard]);
+
+  useEffect(() => {
+    if (grammarList.length > 0) {
+      setFlashCard(grammarList);
+      localStorage.setItem("localGrammarList", JSON.stringify(flashCard));
+    }
+  }, [grammarList, flashCard]);
+
   const changeNormalOrRemember = () => {
-    if (normalOrRemember === "normal" && rememberList.length > 0) {
+    if (
+      grammarOrVocab === "Vocabulary" &&
+      normalOrRemember === "normal" &&
+      rememberVocabList.length > 0
+    ) {
+      setNormalOrRemember("remember");
+    } else {
+      setNormalOrRemember("normal");
+    }
+    if (
+      grammarOrVocab === "Grammar" &&
+      normalOrRemember === "normal" &&
+      rememberGrammarList.length > 0
+    ) {
       setNormalOrRemember("remember");
     } else {
       setNormalOrRemember("normal");
@@ -65,19 +93,31 @@ const App = () => {
       ]);
       return;
     }
-    if (cardID === flashCard.length - 1) {
-      setCardID(cardID - 1);
-      setFlashCard(flashCard.filter((_, index) => index !== cardID));
-      localStorage.setItem("localVocabList", JSON.stringify(flashCard))
-      setRememberList([...rememberList, cardToMove]);
-      if(flashCard===vocabList){
-        setVocabList(flashCard.filter((_, index) => index !== cardID))
+    if (grammarOrVocab === "Vocabulary") {
+      if (cardID === flashCard.length - 1) {
+        setCardID(cardID - 1);
+        setFlashCard(flashCard.filter((_, index) => index !== cardID));
+        setRememberVocabList([...rememberVocabList, cardToMove]);
+        if (flashCard === vocabList) {
+          setVocabList(flashCard.filter((_, index) => index !== cardID));
+        }
+      } else {
+        setFlashCard(flashCard.filter((_, index) => index !== cardID));
+        setRememberVocabList([...rememberVocabList, cardToMove]);
       }
-      return;
+    }else{
+      if (cardID === flashCard.length - 1) {
+        setCardID(cardID - 1);
+        setFlashCard(flashCard.filter((_, index) => index !== cardID));
+        setRememberGrammarList([...rememberGrammarList, cardToMove]);
+        if (flashCard === vocabList) {
+          setGrammarList(flashCard.filter((_, index) => index !== cardID));
+        }
+      } else {
+        setFlashCard(flashCard.filter((_, index) => index !== cardID));
+        setRememberGrammarList([...rememberGrammarList, cardToMove]);
+      }
     }
-    setFlashCard(flashCard.filter((_, index) => index !== cardID));
-    localStorage.setItem("localVocabList", JSON.stringify(flashCard))
-    setRememberList([...rememberList, cardToMove]);
   };
   function shuffle() {
     if (normalOrRemember === "normal") {
@@ -99,24 +139,46 @@ const App = () => {
   }
 
   function backWard() {
-    normalOrRemember === "normal"
-      ? cardID == 0
+    if (grammarOrVocab === "Vocabulary") {
+      normalOrRemember === "remember"
+        ? remCardID === rememberVocabList.length - 1
+          ? setRemCardID(remCardID)
+          : setRemCardID(remCardID - 1)
+        : cardID == flashCard.length - 1
         ? setCardID(cardID)
-        : setCardID(cardID - 1)
-      : cardID == 0
-      ? setRemCardID(cardID)
-      : setRemCardID(cardID - 1);
-    setAnswerColor("");
+        : setCardID(cardID - 1);
+      setAnswerColor("");
+    } else {
+      normalOrRemember === "remember"
+        ? remCardID === rememberGrammarList.length - 1
+          ? setRemCardID(remCardID)
+          : setRemCardID(remCardID - 1)
+        : cardID == flashCard.length - 1
+        ? setCardID(cardID)
+        : setCardID(cardID - 1);
+      setAnswerColor("");
+    }
   }
   function forward() {
-    normalOrRemember === "remember"
-      ? remCardID === rememberList.length - 1
-        ? setRemCardID(remCardID)
-        : setRemCardID(remCardID + 1)
-      : cardID == flashCard.length - 1
-      ? setCardID(cardID)
-      : setCardID(cardID + 1);
-    setAnswerColor("");
+    if (grammarOrVocab === "Vocabulary") {
+      normalOrRemember === "remember"
+        ? remCardID === rememberVocabList.length - 1
+          ? setRemCardID(remCardID)
+          : setRemCardID(remCardID + 1)
+        : cardID == flashCard.length - 1
+        ? setCardID(cardID)
+        : setCardID(cardID + 1);
+      setAnswerColor("");
+    } else {
+      normalOrRemember === "remember"
+        ? remCardID === rememberGrammarList.length - 1
+          ? setRemCardID(remCardID)
+          : setRemCardID(remCardID + 1)
+        : cardID == flashCard.length - 1
+        ? setCardID(cardID)
+        : setCardID(cardID + 1);
+      setAnswerColor("");
+    }
   }
   const handleClick = (e) => {
     if (e.key === "Enter" && normalOrRemember === "normal") {
@@ -140,8 +202,8 @@ const App = () => {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        width:"100wh",
-        height:"896px"
+        width: "100wh",
+        height: "896px",
       }}
     >
       <button
@@ -155,7 +217,7 @@ const App = () => {
       >
         {normalOrRemember == "normal"
           ? flashCard[cardID]?.[frontOrBack]
-          : rememberList[remCardID]?.[frontOrBack]}
+          : rememberVocabList[remCardID]?.[frontOrBack]}
       </button>
       <input
         id="inputBtn"
@@ -163,7 +225,7 @@ const App = () => {
         style={{ width: "365px", margin: "2px", fontSize: "16px" }}
         value={answer}
         onChange={(e) => setAnswer(e.target.value)}
-        onKeyDown={(e)=>handleClick(e)}
+        onKeyDown={(e) => handleClick(e)}
       />
       <br />
       <div style={{ marginTop: "10px" }}>
@@ -204,7 +266,13 @@ const App = () => {
         >
           {grammarOrVocab === "Grammar" ? "Vocabulary mode" : "Grammar Mode"}
         </button>
-          <button onClick={()=>console.log(localStorage.getItem("localVocabList"))}></button>
+        <button
+          onClick={() =>
+            console.log(JSON.parse(localStorage.getItem("localVocabList")))
+          }
+        >
+          debug tool
+        </button>
       </div>
     </div>
   );
