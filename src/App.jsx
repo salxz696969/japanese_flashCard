@@ -10,7 +10,7 @@ const App = () => {
   const [normalOrRemember, setNormalOrRemember] = useState("normal");
   const [answer, setAnswer] = useState("");
   const [answerColor, setAnswerColor] = useState("");
-  // localStorage.clear();
+  localStorage.clear();
   useEffect(() => {
     const localVocabList = localStorage.getItem("localVocabList");
     if (localVocabList) {
@@ -26,7 +26,7 @@ const App = () => {
       setRememberList(parsedRem);
     }
   }, []);
-  
+
   useEffect(() => {
     if (flashCard.length > 0) {
       localStorage.setItem("localVocabList", JSON.stringify(flashCard));
@@ -38,7 +38,6 @@ const App = () => {
       localStorage.setItem("localRemList", JSON.stringify(rememberList));
     }
   }, [rememberList]);
-  
 
   const changeNormalOrRemember = () => {
     if (normalOrRemember === "normal" && rememberList.length > 0) {
@@ -57,13 +56,7 @@ const App = () => {
   const moveToRememberList = () => {
     if (normalOrRemember === "normal") {
       let cardToMove = flashCard[cardID];
-      if (flashCard.length === 1) {
-        setFlashCard([
-          {
-            back: "ありがとう！何か練習したいことがあれば聞いてね！💪✨",
-            front: "Congrats, you have learnt every word!💪✨",
-          },
-        ]);
+      if (flashCard.length === 0) {
         return;
       }
       if (cardID === flashCard.length - 1) {
@@ -74,22 +67,8 @@ const App = () => {
         setFlashCard(flashCard.filter((_, index) => index !== cardID));
         setRememberList([...rememberList, cardToMove]);
       }
-    }else{
-      let cardToMove = rememberList[remCardID];
-      if (rememberList.length === 1) {
-        changeNormalOrRemember();
-        return;
-      }
-      if (remCardID === rememberList.length - 1) {
-        setRemCardID(remCardID - 1);
-        setRememberList(rememberList.filter((_, index) => index !== remCardID));
-        setFlashCard([...flashCard, cardToMove]);
-      } else {
-        setRememberList(rememberList.filter((_, index) => index !== remCardID));
-        setFlashCard([...flashCard, cardToMove]);
-      }
     }
-  }
+  };
   function shuffle() {
     if (normalOrRemember === "normal") {
       for (let i = flashCard.length - 1; i > 0; i--) {
@@ -157,7 +136,11 @@ const App = () => {
         onClick={updateFrontAndBack}
       >
         {normalOrRemember == "normal"
-          ? flashCard[cardID]?.[frontOrBack]
+          ? flashCard.length === 0
+            ? "ありがとう！何か練習したいことがあれば聞いてね！💪✨"
+            : flashCard[cardID]?.[frontOrBack]
+          : rememberList.length === 0
+          ? "ありがとう！何か練習したいことがあれば聞いてね！💪✨"
           : rememberList[remCardID]?.[frontOrBack]}
       </button>
       <input
@@ -187,7 +170,7 @@ const App = () => {
           onClick={() => moveToRememberList()}
           style={{ height: "50px", width: "185px", margin: "2px" }}
         >
-          {normalOrRemember==="normal"? "remember":"forget"}
+          {normalOrRemember === "normal" ? "remember" : "forget"}
         </button>
         <button
           onClick={() => changeNormalOrRemember()}
