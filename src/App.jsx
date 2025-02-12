@@ -10,7 +10,7 @@ const App = () => {
   const [normalOrRemember, setNormalOrRemember] = useState("normal");
   const [answer, setAnswer] = useState("");
   const [answerColor, setAnswerColor] = useState("");
-  localStorage.clear();
+  // localStorage.clear();
   useEffect(() => {
     const localVocabList = localStorage.getItem("localVocabList");
     if (localVocabList) {
@@ -67,13 +67,15 @@ const App = () => {
         setFlashCard(flashCard.filter((_, index) => index !== cardID));
         setRememberList([...rememberList, cardToMove]);
       }
-    }else{
-      if(rememberList.length>0){
+    } else {
+      if (rememberList.length > 0) {
         changeNormalOrRemember();
-        setFlashCard((prev)=>[...prev,rememberList]);
+        setFlashCard((prev) => [...prev, ...rememberList]);
         setRememberList([]);
       }
     }
+    console.log(JSON.parse(localStorage.getItem("localVocabList")));
+    console.log(JSON.parse(localStorage.getItem("localRemList")));
   };
   function shuffle() {
     if (normalOrRemember === "normal") {
@@ -96,23 +98,35 @@ const App = () => {
   }
 
   function backWard() {
-    normalOrRemember === "normal"
-      ? cardID == 0
-        ? setCardID(cardID)
-        : setCardID(cardID - 1)
-      : cardID == 0
-      ? setRemCardID(cardID)
-      : setRemCardID(cardID - 1);
+    if (normalOrRemember === "normal") {
+      if (cardID === 0) {
+        setCardID(cardID);
+      } else {
+        setCardID(cardID - 1);
+      }
+    } else {
+      if (remCardID === 0) {
+        setRemCardID(remCardID);
+      } else {
+        setRemCardID(remCardID - 1);
+      }
+    }
     setAnswerColor("");
   }
   function forward() {
-    normalOrRemember === "remember"
-      ? remCardID === rememberList.length - 1
-        ? setRemCardID(remCardID)
-        : setRemCardID(remCardID + 1)
-      : cardID == flashCard.length - 1
-      ? setCardID(cardID)
-      : setCardID(cardID + 1);
+    if (normalOrRemember === "remember") {
+      if (remCardID === rememberList.length - 1) {
+        setRemCardID(remCardID);
+      } else {
+        setRemCardID(remCardID + 1);
+      }
+    } else {
+      if (cardID === flashCard.length - 1) {
+        setCardID(cardID);
+      } else {
+        setCardID(cardID + 1);
+      }
+    }
     setAnswerColor("");
   }
   const handleClick = (e) => {
@@ -176,7 +190,7 @@ const App = () => {
           onClick={() => moveToRememberList()}
           style={{ height: "50px", width: "185px", margin: "2px" }}
         >
-          {normalOrRemember === "normal" ? "remember" : "study again"}
+          {normalOrRemember === "normal" ? "Remember" : "Study again"}
         </button>
         <button
           onClick={() => changeNormalOrRemember()}
@@ -189,6 +203,12 @@ const App = () => {
           style={{ height: "50px", width: "185px", margin: "2px" }}
         >
           Shuffle
+        </button>
+        <button
+          style={{ height: "50px", width: "185px", margin: "2px" }}
+          onClick={() => localStorage.clear()}
+        >
+          Clear memory
         </button>
       </div>
     </div>
