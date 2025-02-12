@@ -30,12 +30,16 @@ const App = () => {
   useEffect(() => {
     if (flashCard.length > 0) {
       localStorage.setItem("localVocabList", JSON.stringify(flashCard));
+      console.log(JSON.parse(localStorage.getItem("localVocabList")));
+      console.log(JSON.parse(localStorage.getItem("localRemList")));
     }
   }, [flashCard]);
 
   useEffect(() => {
     if (rememberList.length > 0) {
       localStorage.setItem("localRemList", JSON.stringify(rememberList));
+      console.log(JSON.parse(localStorage.getItem("localVocabList")));
+      console.log(JSON.parse(localStorage.getItem("localRemList")));
     }
   }, [rememberList]);
 
@@ -55,6 +59,7 @@ const App = () => {
   };
   const moveToRememberList = () => {
     if (normalOrRemember === "normal") {
+      if (flashCard.length === 0) return;
       let cardToMove = flashCard[cardID];
       if (flashCard.length === 0) {
         return;
@@ -74,16 +79,15 @@ const App = () => {
         setRememberList([]);
       }
     }
-    console.log(JSON.parse(localStorage.getItem("localVocabList")));
-    console.log(JSON.parse(localStorage.getItem("localRemList")));
   };
   function shuffle() {
     if (normalOrRemember === "normal") {
-      for (let i = flashCard.length - 1; i > 0; i--) {
-        let j = Math.floor(Math.random() * (i + 1));
-        [flashCard[i], flashCard[j]] = [flashCard[j], flashCard[i]];
-      }
+      setFlashCard((prevFlashCards) => {
+        const shuffled = [...prevFlashCards].sort(() => Math.random() - 0.5);
+        return shuffled;
+      });
       setCardID(0);
+      
     }
   }
   function checkAnswer() {

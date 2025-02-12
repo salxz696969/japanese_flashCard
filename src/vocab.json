@@ -25,7 +25,7 @@
     { "back": "コンビニ", "front": "convenience store" },
     { "back": "こうえん", "front": "park" },
     { "back": "きっさてん", "front": "café, coffee shop" },
-    { "back": "～や", "front": "store (e.g., bookshop, flower shop)" },
+    { "back": "や", "front": "store (e.g., bookshop, flower shop)" },
     { "back": "のりば", "front": "bus stop, taxi stand" },
     { "back": "けん", "front": "prefecture" },
     { "back": "うえ", "front": "above, on top" },
@@ -37,5 +37,6 @@
     { "back": "なか", "front": "inside" },
     { "back": "となり", "front": "next to" },
     { "back": "あいだ", "front": "between" },
-    { "back": "ちかく", "front": "near, nearby" }
+    { "back": "ちかく", "front": "near, nearby" },
+    { "back": "した", "front": "under, below, beneath" }
 ]
