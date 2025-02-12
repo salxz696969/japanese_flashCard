@@ -10,6 +10,7 @@ const App = () => {
   const [normalOrRemember, setNormalOrRemember] = useState("normal");
   const [answer, setAnswer] = useState("");
   const [answerColor, setAnswerColor] = useState("");
+  const [lessonVocab, setLessonVocab]= useState("lesson_10");
   // localStorage.clear();
   useEffect(() => {
     const localVocabList = localStorage.getItem("localVocabList");
@@ -18,7 +19,7 @@ const App = () => {
       setFlashCard(parsedVocab);
     } else {
       localStorage.setItem("localVocabList", JSON.stringify(vocabListFromFile));
-      setFlashCard(vocabListFromFile);
+      setFlashCard([...vocabListFromFile["lesson_10"]]);
     }
     const localRemberList = localStorage.getItem("localRemList");
     if (localRemberList) {
@@ -26,6 +27,13 @@ const App = () => {
       setRememberList(parsedRem);
     }
   }, []);
+
+  useEffect(() => {
+    if (vocabListFromFile[lessonVocab]) {
+      setFlashCard([...vocabListFromFile[lessonVocab]]);
+      setCardID(0);
+    }
+  }, [lessonVocab]);
 
   useEffect(() => {
     if (flashCard.length > 0) {
@@ -165,7 +173,7 @@ const App = () => {
             : flashCard[cardID]?.[frontOrBack]
           : rememberList.length === 0
           ? "ありがとう！何か練習したいことがあれば聞いてね！💪✨"
-          : rememberList[remCardID]?.[frontOrBack]}
+          : rememberList[remCardID][frontOrBack]}
       </button>
       <input
         id="inputBtn"
@@ -175,6 +183,11 @@ const App = () => {
         onChange={(e) => setAnswer(e.target.value)}
         onKeyDown={(e) => handleClick(e)}
       />
+      <br />
+      <select name="" id="" value={lessonVocab} onChange={(e)=>setLessonVocab(e.target.value)}>
+        <option value="lesson_10">lesson 10</option>
+        <option value="lesson_9">lesson 9</option>
+      </select>
       <br />
       <div style={{ marginTop: "10px" }}>
         <button
