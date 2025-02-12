@@ -67,6 +67,12 @@ const App = () => {
         setFlashCard(flashCard.filter((_, index) => index !== cardID));
         setRememberList([...rememberList, cardToMove]);
       }
+    }else{
+      if(rememberList.length>0){
+        changeNormalOrRemember();
+        setFlashCard((prev)=>[...prev,rememberList]);
+        setRememberList([]);
+      }
     }
   };
   function shuffle() {
@@ -170,7 +176,7 @@ const App = () => {
           onClick={() => moveToRememberList()}
           style={{ height: "50px", width: "185px", margin: "2px" }}
         >
-          {normalOrRemember === "normal" ? "remember" : "forget"}
+          {normalOrRemember === "normal" ? "remember" : "study again"}
         </button>
         <button
           onClick={() => changeNormalOrRemember()}
