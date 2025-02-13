@@ -1,0 +1,126 @@
+*{
+    background-color: #C6E7FF;
+    font-family: monospace;
+}
+
+#select option{
+    font-size: 1rem;
+    background-color: white;
+}
+#container{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#display{
+    
+    width: 80vw;
+    font-size: 2rem;
+    height: 30vh;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px gray solid;
+}
+
+#select{
+    font-size: 1.5rem;
+    border: none;
+    align-self: flex-start;
+    transition: max-height 0.5s ease-in-out;
+}
+
+#containerNav{
+    display: flex;
+}
+#box{
+    margin-top: 20px;
+    gap: 5px;
+    width: 80vw;
+    display: grid;
+    grid-template-columns: repeat(2, 40vw);
+    grid-template-rows: 1fr 2px repeat(3, 1fr);
+}
+#inputBtn{
+    grid-column: 1/3;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid gray;
+    font-size: 1.25rem;
+    padding-left: 15px;
+    outline: none;
+}
+.navR{
+    font-size: 2rem;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    border: 1px solid gray;
+    border-radius: 10px;
+    align-items: center;
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+.navL{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    font-size: 2rem;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    border: 1px solid gray;
+    border-radius: 10px;
+    align-items: center;
+}
+#rem{
+    grid-row: 4/5;
+    grid-column: 1/3;
+    background-color: white;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+#show{
+    padding: 5px;
+    border: solid gray 1px;
+    border-radius: 10px;
+    background-color: white;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    width: 80vw;
+    height: 50px;
+    justify-content: space-evenly;
+}
+#show1{
+    border: 1px solid gray;
+    width: 45%;
+    height: 30px;
+    border-radius: 10px;
+    font-size: 1.25rem;
+}
+#show2{
+    border: 1px solid gray;
+    width: 45%;
+    height: 30px;
+    border-radius: 10px;
+    font-size: 1.25rem;
+}
+
+#con1{
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 10px;
+    font-size: 1.25rem;
+    grid-row: 5/6;
+    grid-column: 1/2;
+}
+#con2{
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 10px;
+    font-size: 1.25rem;
+    grid-row: 5/6;
+    grid-column: 2/3;
+}
