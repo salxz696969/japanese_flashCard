@@ -1,8 +1,6 @@
 import { useEffect, useState } from "react";
 import vocabListFromFile from "./vocab.json";
 import "./styling.css";
-import "bootstrap/dist/css/bootstrap.min.css";
-
 const App = () => {
   const [cardID, setCardID] = useState(0);
   const [remCardID, setRemCardID] = useState(0);
@@ -185,7 +183,7 @@ const App = () => {
         <button id="show1" onClick={() => setNormalOrRemember("normal")} style={normalOrRemember==="normal"? {backgroundColor:"#C6E7FF"}: {backgroundColor:"#ffffff"}}>
           Show normal
         </button>
-        <button id="show2" onClick={() => setNormalOrRemember("remember")} style={normalOrRemember==="remember"? {backgroundColor:"#C6E7FF"}: {backgroundColor:"#ffffff"}}>
+        <button id="show2" onClick={() => setNormalOrRemember("remember")} style={normalOrRemember==="remember"&&rememberList.length>0? {backgroundColor:"#C6E7FF"}: {backgroundColor:"#ffffff"}}>
           Show remember
         </button>
       </div>
