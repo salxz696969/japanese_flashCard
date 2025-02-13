@@ -16,7 +16,7 @@ const App = () => {
     const localVocabList = localStorage.getItem("localVocabList");
     if (localVocabList) {
       const parsedVocab = JSON.parse(localVocabList);
-      setFlashCard(parsedVocab);
+      setFlashCard(parsedVocab["lesson_10"]);
     } else {
       localStorage.setItem("localVocabList", JSON.stringify(vocabListFromFile));
       setFlashCard([...vocabListFromFile["lesson_10"]]);
