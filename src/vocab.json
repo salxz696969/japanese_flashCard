@@ -1552,11 +1552,11 @@
   },
   {
     "back": "ごひき",
-    "front": "5 rabbits"
+    "front": "5 rats"
   },
   {
     "back": "ろっぴき",
-    "front": "6 mice"
+    "front": "6 kitsune"
   },
   {
     "back": "ななひき",
@@ -1693,6 +1693,286 @@
   {
     "back": "じゅっさつ",
     "front": "10 encyclopedias"
-  }
+  },
+  {
+    "back": "いっとう",
+    "front": "1 elephant"
+  },
+  {
+    "back": "にとう",
+    "front": "2 horses"
+  },
+  {
+    "back": "さんとう",
+    "front": "3 cows"
+  },
+  {
+    "back": "よんとう",
+    "front": "4 pigs"
+  },
+  {
+    "back": "ごとう",
+    "front": "5 lions"
+  },
+  {
+    "back": "ろくとう",
+    "front": "6 giraffes"
+  },
+  {
+    "back": "ななとう",
+    "front": "7 camels"
+  },
+  {
+    "back": "はっとう",
+    "front": "8 rhinoceroses"
+  },
+  {
+    "back": "きゅうとう",
+    "front": "9 tigers"
+  },
+  {
+    "back": "じゅっとう",
+    "front": "10 bears"
+  },
+  {
+    "back": "いちじさんじゅっぷんにびょう",
+    "front": "1:30:02"
+  },
+  {
+    "back": "にじじゅっぷんごびょう",
+    "front": "2:10:05"
+  },
+  {
+    "back": "さんじにじゅうごふんよんびょう",
+    "front": "3:25:04"
+  },
+  {
+    "back": "よじごじゅっぷんろくびょう",
+    "front": "4:50:06"
+  },
+  {
+    "back": "ごじさんじゅっぷんはちびょう",
+    "front": "5:30:08"
+  },
+  {
+    "back": "ろくじよんじゅっぷんきゅうびょう",
+    "front": "6:40:09"
+  },
+  {
+    "back": "ななじごじゅうごふんにびょう",
+    "front": "7:55:02"
+  },
+  {
+    "back": "はちじごふんごびょう",
+    "front": "8:05:05"
+  },
+  {
+    "back": "くじにじゅうごふんろくびょう",
+    "front": "9:25:06"
+  },
+  {
+    "back": "じゅうじさんじゅうぷんななびょう",
+    "front": "10:30:07"
+  },
+  {
+  "back": "いっちょう",
+  "front": "1 direct route"
+},
+{
+  "back": "にちょう",
+  "front": "2 roads"
+},
+{
+  "back": "さんちょう",
+  "front": "3 streets"
+},
+{
+  "back": "よんちょう",
+  "front": "4 highways"
+},
+{
+  "back": "ごちょう",
+  "front": "5 paths"
+},
+{
+  "back": "ろくちょう",
+  "front": "6 lanes"
+},
+{
+  "back": "ななちょう",
+  "front": "7 tracks"
+},
+{
+  "back": "はちちょう",
+  "front": "8 boulevards"
+},
+{
+  "back": "きゅうちょう",
+  "front": "9 avenues"
+},
+{
+  "back": "じゅうちょう",
+  "front": "10 expressways"
+},
+{
+  "back": "いけん",
+  "front": "1 case"
+},
+{
+  "back": "にけん",
+  "front": "2 incidents"
+},
+{
+  "back": "さんけん",
+  "front": "3 complaints"
+},
+{
+  "back": "よんけん",
+  "front": "4 situations"
+},
+{
+  "back": "ごけん",
+  "front": "5 reports"
+},
+{
+  "back": "ろっけん",
+  "front": "6 matters"
+},
+{
+  "back": "ななけん",
+  "front": "7 problems"
+},
+{
+  "back": "はっけん",
+  "front": "8 incidents"
+},
+{
+  "back": "きゅうけん",
+  "front": "9 cases"
+},
+{
+  "back": "じゅっけん",
+  "front": "10 events"
+},
+{
+  "back": "いっそく",
+  "front": "1 pair of shoes"
+},
+{
+  "back": "にぞく",
+  "front": "2 pairs of socks"
+},
+{
+  "back": "さんぞく",
+  "front": "3 pairs of gloves"
+},
+{
+  "back": "よんぞく",
+  "front": "4 pairs of boots"
+},
+{
+  "back": "ごぞく",
+  "front": "5 pairs of sandals"
+},
+{
+  "back": "ろくぞく",
+  "front": "6 pairs of slippers"
+},
+{
+  "back": "ななぞく",
+  "front": "7 pairs of shoes"
+},
+{
+  "back": "はちぞく",
+  "front": "8 pairs of heels"
+},
+{
+  "back": "きゅうぞく",
+  "front": "9 pairs of shoes"
+},
+{
+  "back": "じゅうぞく",
+  "front": "10 pairs of boots"
+},
+{
+  "back": "いったま",
+  "front": "1 ball"
+},
+{
+  "back": "にたま",
+  "front": "2 marbles"
+},
+{
+  "back": "さんたま",
+  "front": "3 tennis balls"
+},
+{
+  "back": "よんたま",
+  "front": "4 soccer balls"
+},
+{
+  "back": "ごたま",
+  "front": "5 basketballs"
+},
+{
+  "back": "ろくたま",
+  "front": "6 baseballs"
+},
+{
+  "back": "ななたま",
+  "front": "7 golf balls"
+},
+{
+  "back": "はちたま",
+  "front": "8 ping pong balls"
+},
+{
+  "back": "きゅうたま",
+  "front": "9 rubber balls"
+},
+{
+  "back": "じゅうたま",
+  "front": "10 softballs"
+},
+{
+  "back": "いっきょく",
+  "front": "1 piece of music"
+},
+{
+  "back": "にきょく",
+  "front": "2 pieces of music"
+},
+{
+  "back": "さんきょく",
+  "front": "3 musical compositions"
+},
+{
+  "back": "よんきょく",
+  "front": "4 songs"
+},
+{
+  "back": "ごきょく",
+  "front": "5 melodies"
+},
+{
+  "back": "ろっきょく",
+  "front": "6 tunes"
+},
+{
+  "back": "ななきょく",
+  "front": "7 ballads"
+},
+{
+  "back": "はっきょく",
+  "front": "8 tracks"
+},
+{
+  "back": "きゅうきょく",
+  "front": "9 symphonies"
+},
+{
+  "back": "じゅっきょく",
+  "front": "10 choruses"
+}
 ]
 }
