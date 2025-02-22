@@ -178,6 +178,7 @@ const App = () => {
         <option value="lesson23">Lesson 23</option>
         <option value="lesson24">Lesson 24</option>
         <option value="lesson25">Lesson 25</option>
+        <option value="counting">counting</option>
       </select>
       <div id="show">
         <button id="show1" onClick={() => setNormalOrRemember("normal")} style={normalOrRemember==="normal"? {backgroundColor:"#C6E7FF"}: {backgroundColor:"#ffffff"}}>
