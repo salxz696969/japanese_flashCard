@@ -1292,5 +1292,407 @@
       "back": "どうぞおげんきで。",
       "front": "Best of luck. (said when expecting a long separation)"
     }
-  ]
+  ],
+  "counting":[
+  {
+    "back": "ひとつ",
+    "front": "1 apple"
+  },
+  {
+    "back": "ふたつ",
+    "front": "2 cakes"
+  },
+  {
+    "back": "みっつ",
+    "front": "3 oranges"
+  },
+  {
+    "back": "よっつ",
+    "front": "4 toys"
+  },
+  {
+    "back": "いつつ",
+    "front": "5 candies"
+  },
+  {
+    "back": "むっつ",
+    "front": "6 strawberries"
+  },
+  {
+    "back": "ななつ",
+    "front": "7 cups"
+  },
+  {
+    "back": "やっつ",
+    "front": "8 pillows"
+  },
+  {
+    "back": "ここのつ",
+    "front": "9 chairs"
+  },
+  {
+    "back": "とお",
+    "front": "10 stones"
+  },
+  {
+    "back": "いっかい",
+    "front": "1 time"
+  },
+  {
+    "back": "にかい",
+    "front": "2 meetings"
+  },
+  {
+    "back": "さんかい",
+    "front": "3 appointments"
+  },
+  {
+    "back": "よんかい",
+    "front": "4 workouts"
+  },
+  {
+    "back": "ごかい",
+    "front": "5 races"
+  },
+  {
+    "back": "ろっかい",
+    "front": "6 events"
+  },
+  {
+    "back": "ななかい",
+    "front": "7 visits"
+  },
+  {
+    "back": "はっかい",
+    "front": "8 dinners"
+  },
+  {
+    "back": "きゅうかい",
+    "front": "9 matches"
+  },
+  {
+    "back": "じゅっかい",
+    "front": "10 lessons"
+  },
+  {
+    "back": "ひとり",
+    "front": "1 teacher"
+  },
+  {
+    "back": "ふたり",
+    "front": "2 chefs"
+  },
+  {
+    "back": "さんにん",
+    "front": "3 players"
+  },
+  {
+    "back": "よにん",
+    "front": "4 dancers"
+  },
+  {
+    "back": "ごにん",
+    "front": "5 students"
+  },
+  {
+    "back": "ろくにん",
+    "front": "6 scientists"
+  },
+  {
+    "back": "しちにん",
+    "front": "7 authors"
+  },
+  {
+    "back": "はちにん",
+    "front": "8 doctors"
+  },
+  {
+    "back": "きゅうにん",
+    "front": "9 artists"
+  },
+  {
+    "back": "じゅうにん",
+    "front": "10 musicians"
+  },
+  {
+    "back": "いちだい",
+    "front": "1 car"
+  },
+  {
+    "back": "にだい",
+    "front": "2 computers"
+  },
+  {
+    "back": "さんだい",
+    "front": "3 bicycles"
+  },
+  {
+    "back": "よんだい",
+    "front": "4 scooters"
+  },
+  {
+    "back": "ごだい",
+    "front": "5 washing machines"
+  },
+  {
+    "back": "ろくだい",
+    "front": "6 printers"
+  },
+  {
+    "back": "しちだい",
+    "front": "7 phones"
+  },
+  {
+    "back": "はちだい",
+    "front": "8 motorcycles"
+  },
+  {
+    "back": "きゅうだい",
+    "front": "9 fridges"
+  },
+  {
+    "back": "じゅうだい",
+    "front": "10 laptops"
+  },
+  {
+    "back": "いちまい",
+    "front": "1 sheet of paper"
+  },
+  {
+    "back": "にまい",
+    "front": "2 photos"
+  },
+  {
+    "back": "さんまい",
+    "front": "3 tickets"
+  },
+  {
+    "back": "よんまい",
+    "front": "4 towels"
+  },
+  {
+    "back": "ごまい",
+    "front": "5 postcards"
+  },
+  {
+    "back": "ろくまい",
+    "front": "6 napkins"
+  },
+  {
+    "back": "しちまい",
+    "front": "7 playing cards"
+  },
+  {
+    "back": "はちまい",
+    "front": "8 magazines"
+  },
+  {
+    "back": "きゅうまい",
+    "front": "9 certificates"
+  },
+  {
+    "back": "じゅうまい",
+    "front": "10 menus"
+  },
+  {
+    "back": "いちわ",
+    "front": "1 bird"
+  },
+  {
+    "back": "にわ",
+    "front": "2 chickens"
+  },
+  {
+    "back": "さんわ",
+    "front": "3 ducks"
+  },
+  {
+    "back": "よんわ",
+    "front": "4 parrots"
+  },
+  {
+    "back": "ごわ",
+    "front": "5 doves"
+  },
+  {
+    "back": "ろくわ",
+    "front": "6 pigeons"
+  },
+  {
+    "back": "しちわ",
+    "front": "7 seagulls"
+  },
+  {
+    "back": "はちわ",
+    "front": "8 eagles"
+  },
+  {
+    "back": "きゅうわ",
+    "front": "9 owls"
+  },
+  {
+    "back": "じゅうわ",
+    "front": "10 swans"
+  },
+  {
+    "back": "いっぴき",
+    "front": "1 cat"
+  },
+  {
+    "back": "にひき",
+    "front": "2 dogs"
+  },
+  {
+    "back": "さんびき",
+    "front": "3 hamsters"
+  },
+  {
+    "back": "よんひき",
+    "front": "4 goldfish"
+  },
+  {
+    "back": "ごひき",
+    "front": "5 rabbits"
+  },
+  {
+    "back": "ろっぴき",
+    "front": "6 mice"
+  },
+  {
+    "back": "しちひき",
+    "front": "7 frogs"
+  },
+  {
+    "back": "はっぴき",
+    "front": "8 lizards"
+  },
+  {
+    "back": "きゅうひき",
+    "front": "9 squirrels"
+  },
+  {
+    "back": "じゅっぴき",
+    "front": "10 monkeys"
+  },
+  {
+    "back": "いっぱん",
+    "front": "1 cup"
+  },
+  {
+    "back": "にはい",
+    "front": "2 bowls"
+  },
+  {
+    "back": "さんばい",
+    "front": "3 glasses"
+  },
+  {
+    "back": "よんはい",
+    "front": "4 mugs"
+  },
+  {
+    "back": "ごはい",
+    "front": "5 teacups"
+  },
+  {
+    "back": "ろっぱい",
+    "front": "6 coffee cups"
+  },
+  {
+    "back": "ななはい",
+    "front": "7 wine glasses"
+  },
+  {
+    "back": "はっぱい",
+    "front": "8 water bottles"
+  },
+  {
+    "back": "きゅうはい",
+    "front": "9 beer mugs"
+  },
+  {
+    "back": "じゅっぱい",
+    "front": "10 shot glasses"
+  },
+  {
+    "back": "いっこ",
+    "front": "1 cookie"
+  },
+  {
+    "back": "にこ",
+    "front": "2 balls"
+  },
+  {
+    "back": "さんこ",
+    "front": "3 apples"
+  },
+  {
+    "back": "よんこ",
+    "front": "4 donuts"
+  },
+  {
+    "back": "ごこ",
+    "front": "5 cupcakes"
+  },
+  {
+    "back": "ろっこ",
+    "front": "6 chocolates"
+  },
+  {
+    "back": "しちこ",
+    "front": "7 eggs"
+  },
+  {
+    "back": "はっこ",
+    "front": "8 boxes"
+  },
+  {
+    "back": "きゅうこ",
+    "front": "9 bricks"
+  },
+  {
+    "back": "じゅっこ",
+    "front": "10 pebbles"
+  },
+  {
+    "back": "いっさつ",
+    "front": "1 book"
+  },
+  {
+    "back": "にさつ",
+    "front": "2 notebooks"
+  },
+  {
+    "back": "さんさつ",
+    "front": "3 novels"
+  },
+  {
+    "back": "よんさつ",
+    "front": "4 journals"
+  },
+  {
+    "back": "ごさつ",
+    "front": "5 catalogs"
+  },
+  {
+    "back": "ろくさつ",
+    "front": "6 diaries"
+  },
+  {
+    "back": "ななさつ",
+    "front": "7 photo albums"
+  },
+  {
+    "back": "はっさつ",
+    "front": "8 textbooks"
+  },
+  {
+    "back": "きゅうさつ",
+    "front": "9 anthologies"
+  },
+  {
+    "back": "じゅっさつ",
+    "front": "10 encyclopedias"
+  }
+]
 }
