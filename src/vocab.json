@@ -430,206 +430,200 @@
     { "back": "おみやげ", "front": "souvenir, present" }
   ],
   "lesson8": [
-    
-      { "back": "ハンサム[な]", "front": "handsome" },
-      { "back": "きれい[な]", "front": "beautiful, clean" },
-      { "back": "しずか[な]", "front": "quiet" },
-      { "back": "にぎやか[な]", "front": "lively" },
-      { "back": "ゆうめい[な]", "front": "famous" },
-      { "back": "しんせつ[な]", "front": "kind" },
-      { "back": "げんき[な]", "front": "healthy, sound, cheerful" },
-      { "back": "ひま[な]", "front": "free (time)" },
-      { "back": "べんり[な]", "front": "convenient" },
-      { "back": "すてき[な]", "front": "fine, nice, wonderful" },
-      { "back": "おおきい", "front": "big, large" },
-      { "back": "ちいさい", "front": "small, little" },
-      { "back": "あたらしい", "front": "new" },
-      { "back": "ふるい", "front": "old (not of age)" },
-      { "back": "いい(よい)", "front": "good" },
-      { "back": "わるい", "front": "bad" },
-      { "back": "あつい", "front": "hot" },
-      { "back": "さむい", "front": "cold (referring to temperature)" },
-      { "back": "つめたい", "front": "cold (referring to touch, as a drink)" },
-      { "back": "むずかしい", "front": "difficult" },
-      { "back": "やさしい", "front": "easy" },
-      { "back": "たかい", "front": "expensive, tall, high" },
-      { "back": "やすい", "front": "inexpensive" },
-      { "back": "ひくい", "front": "low" },
-      { "back": "おもしろい", "front": "interesting" },
-      { "back": "おいしい", "front": "delicious, tasty" },
-      { "back": "いそがしい", "front": "busy" },
-      { "back": "たのしい", "front": "enjoyable" },
-      { "back": "しろい", "front": "white" },
-      { "back": "くろい", "front": "black" },
-      { "back": "あかい", "front": "red" },
-      { "back": "あおい", "front": "blue" },
-      { "back": "さくら", "front": "cherry (blossom)" },
-      { "back": "やま", "front": "mountain" },
-      { "back": "まち", "front": "town, city" },
-      { "back": "たべもの", "front": "food" },
-      { "back": "くるま", "front": "car, vehicle" },
-      { "back": "ところ", "front": "place" },
-      { "back": "りょう", "front": "dormitory" },
-      { "back": "べんきょう", "front": "study" },
-      { "back": "せいかつ", "front": "life" },
-      {
-        "back": "[お]しごと",
-        "front": "work, business (~おしごとをします: do one's job, work)"
-      },
-      { "back": "どう", "front": "how" },
-      { "back": "どんな~", "front": "what kind of ~" },
-      { "back": "どれ", "front": "which one (of three or more)" },
-      { "back": "とても", "front": "very" },
-      { "back": "あまり", "front": "not so (used with negatives)" },
-      { "back": "そして", "front": "and (used to connect sentences)" },
-      { "back": "~が、~", "front": "~, but ~" },
-      { "back": "おげんきですか", "front": "How are you?" },
-      { "back": "そうですね", "front": "Well let me see. (pausing)" },
-      {
-        "back": "にほんのせいかつになれましたか",
-        "front": "Have you got used to the life in Japan?"
-      },
-      {
-        "back": "[~、]もういっぱいいかがですか",
-        "front": "Won't you have another cup of [~]?"
-      },
-      { "back": "いいえ、けっこうです", "front": "No, thank you." },
-      { "back": "もう~です[ね]", "front": "It's already ~ [, isn't it?]" },
-      {
-        "back": "そろそろしつれいします",
-        "front": "It's almost time to leave now."
-      },
-      { "back": "またいらっしゃってください", "front": "Please come again." }
-    
+    { "back": "ハンサム[な]", "front": "handsome" },
+    { "back": "きれい[な]", "front": "beautiful, clean" },
+    { "back": "しずか[な]", "front": "quiet" },
+    { "back": "にぎやか[な]", "front": "lively" },
+    { "back": "ゆうめい[な]", "front": "famous" },
+    { "back": "しんせつ[な]", "front": "kind" },
+    { "back": "げんき[な]", "front": "healthy, sound, cheerful" },
+    { "back": "ひま[な]", "front": "free (time)" },
+    { "back": "べんり[な]", "front": "convenient" },
+    { "back": "すてき[な]", "front": "fine, nice, wonderful" },
+    { "back": "おおきい", "front": "big, large" },
+    { "back": "ちいさい", "front": "small, little" },
+    { "back": "あたらしい", "front": "new" },
+    { "back": "ふるい", "front": "old (not of age)" },
+    { "back": "いい(よい)", "front": "good" },
+    { "back": "わるい", "front": "bad" },
+    { "back": "あつい", "front": "hot" },
+    { "back": "さむい", "front": "cold (referring to temperature)" },
+    { "back": "つめたい", "front": "cold (referring to touch, as a drink)" },
+    { "back": "むずかしい", "front": "difficult" },
+    { "back": "やさしい", "front": "easy" },
+    { "back": "たかい", "front": "expensive, tall, high" },
+    { "back": "やすい", "front": "inexpensive" },
+    { "back": "ひくい", "front": "low" },
+    { "back": "おもしろい", "front": "interesting" },
+    { "back": "おいしい", "front": "delicious, tasty" },
+    { "back": "いそがしい", "front": "busy" },
+    { "back": "たのしい", "front": "enjoyable" },
+    { "back": "しろい", "front": "white" },
+    { "back": "くろい", "front": "black" },
+    { "back": "あかい", "front": "red" },
+    { "back": "あおい", "front": "blue" },
+    { "back": "さくら", "front": "cherry (blossom)" },
+    { "back": "やま", "front": "mountain" },
+    { "back": "まち", "front": "town, city" },
+    { "back": "たべもの", "front": "food" },
+    { "back": "くるま", "front": "car, vehicle" },
+    { "back": "ところ", "front": "place" },
+    { "back": "りょう", "front": "dormitory" },
+    { "back": "べんきょう", "front": "study" },
+    { "back": "せいかつ", "front": "life" },
+    {
+      "back": "[お]しごと",
+      "front": "work, business (~おしごとをします: do one's job, work)"
+    },
+    { "back": "どう", "front": "how" },
+    { "back": "どんな~", "front": "what kind of ~" },
+    { "back": "どれ", "front": "which one (of three or more)" },
+    { "back": "とても", "front": "very" },
+    { "back": "あまり", "front": "not so (used with negatives)" },
+    { "back": "そして", "front": "and (used to connect sentences)" },
+    { "back": "~が、~", "front": "~, but ~" },
+    { "back": "おげんきですか", "front": "How are you?" },
+    { "back": "そうですね", "front": "Well let me see. (pausing)" },
+    {
+      "back": "にほんのせいかつになれましたか",
+      "front": "Have you got used to the life in Japan?"
+    },
+    {
+      "back": "[~、]もういっぱいいかがですか",
+      "front": "Won't you have another cup of [~]?"
+    },
+    { "back": "いいえ、けっこうです", "front": "No, thank you." },
+    { "back": "もう~です[ね]", "front": "It's already ~ [, isn't it?]" },
+    {
+      "back": "そろそろしつれいします",
+      "front": "It's almost time to leave now."
+    },
+    { "back": "またいらっしゃってください", "front": "Please come again." }
   ],
   "lesson9": [
-    
-      { "back": "わかります[が]", "front": "understand" },
-      { "back": "あります[が]", "front": "have" },
-      { "back": "すき[な]", "front": "like" },
-      { "back": "きらい[な]", "front": "dislike" },
-      { "back": "じょうず[な]", "front": "good at" },
-      { "back": "へた[な]", "front": "poor at" },
-      { "back": "りょうり", "front": "dish (cooked food), cooking" },
-      { "back": "のみもの", "front": "drinks" },
-      { "back": "スポーツ", "front": "sport (~をします: play sports)" },
-      { "back": "やきゅう", "front": "baseball (~をします: play baseball)" },
-      { "back": "ダンス", "front": "dance (~をします: dance)" },
-      { "back": "おんがく", "front": "music" },
-      { "back": "うた", "front": "song" },
-      { "back": "クラシック", "front": "classical music" },
-      { "back": "ジャズ", "front": "jazz" },
-      { "back": "コンサート", "front": "concert" },
-      { "back": "カラオケ", "front": "karaoke" },
-      {
-        "back": "かぶき",
-        "front": "Kabuki (traditional Japanese musical drama)"
-      },
-      { "back": "え", "front": "picture, drawing" },
-      { "back": "じ", "front": "letter, character" },
-      { "back": "かんじ", "front": "Chinese characters" },
-      { "back": "ひらがな", "front": "Hiragana script" },
-      { "back": "かたかな", "front": "Katakana script" },
-      { "back": "ローマじ", "front": "the Roman alphabet" },
-      { "back": "こまかいおかね", "front": "small change" },
-      { "back": "チケット", "front": "ticket" },
-      { "back": "じかん", "front": "time" },
-      { "back": "ようじ", "front": "something to do, errand" },
-      { "back": "やくそく", "front": "appointment, promise" },
-      { "back": "ごしゅじん", "front": "(someone else's) husband" },
-      { "back": "おっと/しゅじん", "front": "(my) husband" },
-      { "back": "おくさん", "front": "(someone else's) wife" },
-      { "back": "つま/かない", "front": "(my) wife" },
-      { "back": "こども", "front": "child" },
-      { "back": "よく", "front": "well, much" },
-      { "back": "だいたい", "front": "mostly, roughly" },
-      { "back": "たくさん", "front": "many, much" },
-      { "back": "すこし", "front": "a little, a few" },
-      { "back": "ぜんぜん", "front": "not at all (used with negatives)" },
-      { "back": "はやく", "front": "early, quickly, fast" },
-      { "back": "~から", "front": "because ~" },
-      { "back": "どうして", "front": "why" },
-      {
-        "back": "ぎんねんです[ね]",
-        "front": "I'm sorry (to hear that)./That's a pity."
-      },
-      { "back": "すみません", "front": "I am sorry." },
-      { "back": "もしもし", "front": "hello (used on phone)" },
-      { "back": "ああ", "front": "oh" },
-      { "back": "いっしょにいかがですか", "front": "Won't you join me (us)?" },
-      {
-        "back": "[~は]ちょっと...",
-        "front": "[~] is a bit difficult. (an euphemism used when declining an invitation)"
-      },
-      { "back": "だめですか", "front": "So you cannot (come)?" },
-      {
-        "back": "またこんどおねがいします",
-        "front": "Please ask me again some other time. (when refusing an invitation indirectly, considering someone's feelings)"
-      }
-    
+    { "back": "わかります[が]", "front": "understand" },
+    { "back": "あります[が]", "front": "have" },
+    { "back": "すき[な]", "front": "like" },
+    { "back": "きらい[な]", "front": "dislike" },
+    { "back": "じょうず[な]", "front": "good at" },
+    { "back": "へた[な]", "front": "poor at" },
+    { "back": "りょうり", "front": "dish (cooked food), cooking" },
+    { "back": "のみもの", "front": "drinks" },
+    { "back": "スポーツ", "front": "sport (~をします: play sports)" },
+    { "back": "やきゅう", "front": "baseball (~をします: play baseball)" },
+    { "back": "ダンス", "front": "dance (~をします: dance)" },
+    { "back": "おんがく", "front": "music" },
+    { "back": "うた", "front": "song" },
+    { "back": "クラシック", "front": "classical music" },
+    { "back": "ジャズ", "front": "jazz" },
+    { "back": "コンサート", "front": "concert" },
+    { "back": "カラオケ", "front": "karaoke" },
+    {
+      "back": "かぶき",
+      "front": "Kabuki (traditional Japanese musical drama)"
+    },
+    { "back": "え", "front": "picture, drawing" },
+    { "back": "じ", "front": "letter, character" },
+    { "back": "かんじ", "front": "Chinese characters" },
+    { "back": "ひらがな", "front": "Hiragana script" },
+    { "back": "かたかな", "front": "Katakana script" },
+    { "back": "ローマじ", "front": "the Roman alphabet" },
+    { "back": "こまかいおかね", "front": "small change" },
+    { "back": "チケット", "front": "ticket" },
+    { "back": "じかん", "front": "time" },
+    { "back": "ようじ", "front": "something to do, errand" },
+    { "back": "やくそく", "front": "appointment, promise" },
+    { "back": "ごしゅじん", "front": "(someone else's) husband" },
+    { "back": "おっと/しゅじん", "front": "(my) husband" },
+    { "back": "おくさん", "front": "(someone else's) wife" },
+    { "back": "つま/かない", "front": "(my) wife" },
+    { "back": "こども", "front": "child" },
+    { "back": "よく", "front": "well, much" },
+    { "back": "だいたい", "front": "mostly, roughly" },
+    { "back": "たくさん", "front": "many, much" },
+    { "back": "すこし", "front": "a little, a few" },
+    { "back": "ぜんぜん", "front": "not at all (used with negatives)" },
+    { "back": "はやく", "front": "early, quickly, fast" },
+    { "back": "~から", "front": "because ~" },
+    { "back": "どうして", "front": "why" },
+    {
+      "back": "ぎんねんです[ね]",
+      "front": "I'm sorry (to hear that)./That's a pity."
+    },
+    { "back": "すみません", "front": "I am sorry." },
+    { "back": "もしもし", "front": "hello (used on phone)" },
+    { "back": "ああ", "front": "oh" },
+    { "back": "いっしょにいかがですか", "front": "Won't you join me (us)?" },
+    {
+      "back": "[~は]ちょっと...",
+      "front": "[~] is a bit difficult. (an euphemism used when declining an invitation)"
+    },
+    { "back": "だめですか", "front": "So you cannot (come)?" },
+    {
+      "back": "またこんどおねがいします",
+      "front": "Please ask me again some other time. (when refusing an invitation indirectly, considering someone's feelings)"
+    }
   ],
   "lesson10": [
-    
-      {
-        "back": "います[が]",
-        "front": "exist, be (referring to animate things)"
-      },
-      {
-        "back": "あります[が]",
-        "front": "exist, be (referring to inanimate things)"
-      },
-      { "back": "いろいろ[な]", "front": "various" },
-      { "back": "おとこのひと", "front": "man" },
-      { "back": "おんなのひと", "front": "woman" },
-      { "back": "おとこのこ", "front": "boy" },
-      { "back": "おんなのこ", "front": "girl" },
-      { "back": "いぬ", "front": "dog" },
-      { "back": "ねこ", "front": "cat" },
-      { "back": "き", "front": "tree" },
-      { "back": "もの", "front": "thing" },
-      { "back": "フィルム", "front": "film" },
-      { "back": "でんち", "front": "battery" },
-      { "back": "はこ", "front": "box" },
-      { "back": "スイッチ", "front": "switch" },
-      { "back": "れいぞうこ", "front": "refrigerator" },
-      { "back": "テーブル", "front": "table" },
-      { "back": "ベッド", "front": "bed" },
-      { "back": "たな", "front": "shelf" },
-      { "back": "ドア", "front": "door" },
-      { "back": "まど", "front": "window" },
-      { "back": "ポスト", "front": "mailbox, postbox" },
-      { "back": "ビル", "front": "building" },
-      { "back": "こうえん", "front": "park" },
-      { "back": "きっさてん", "front": "coffee shop" },
-      { "back": "ほんや", "front": "bookstore" },
-      { "back": "~や", "front": "~ store" },
-      {
-        "back": "のりば",
-        "front": "a fixed place to catch taxis, trains, etc."
-      },
-      { "back": "けん", "front": "prefecture" },
-      { "back": "うえ", "front": "on, above, over" },
-      { "back": "した", "front": "under, below, beneath" },
-      { "back": "まえ", "front": "front, before" },
-      { "back": "うしろ", "front": "back, behind" },
-      { "back": "みぎ", "front": "right [side]" },
-      { "back": "ひだり", "front": "left [side]" },
-      { "back": "なか", "front": "in, inside" },
-      { "back": "そと", "front": "outside" },
-      { "back": "となり", "front": "next, next door" },
-      { "back": "ちかく", "front": "near, vicinity" },
-      { "back": "あいだ", "front": "between, among" },
-      { "back": "~や~[など]", "front": "~, ~, and so on" },
-      { "back": "いちばん~", "front": "the most ~ (いちばん うえ: the top)" },
-      {
-        "back": "~だんめ",
-        "front": "the ~th shelf (だん is the counter for shelves)"
-      },
-      { "back": "[どうも]すみません。", "front": "Thank you." },
-      { "back": "チリソース", "front": "chilli sauce" },
-      { "back": "おく", "front": "the back" },
-      { "back": "スパイスコーナー", "front": "spice corner" }
-    
+    {
+      "back": "います[が]",
+      "front": "exist, be (referring to animate things)"
+    },
+    {
+      "back": "あります[が]",
+      "front": "exist, be (referring to inanimate things)"
+    },
+    { "back": "いろいろ[な]", "front": "various" },
+    { "back": "おとこのひと", "front": "man" },
+    { "back": "おんなのひと", "front": "woman" },
+    { "back": "おとこのこ", "front": "boy" },
+    { "back": "おんなのこ", "front": "girl" },
+    { "back": "いぬ", "front": "dog" },
+    { "back": "ねこ", "front": "cat" },
+    { "back": "き", "front": "tree" },
+    { "back": "もの", "front": "thing" },
+    { "back": "フィルム", "front": "film" },
+    { "back": "でんち", "front": "battery" },
+    { "back": "はこ", "front": "box" },
+    { "back": "スイッチ", "front": "switch" },
+    { "back": "れいぞうこ", "front": "refrigerator" },
+    { "back": "テーブル", "front": "table" },
+    { "back": "ベッド", "front": "bed" },
+    { "back": "たな", "front": "shelf" },
+    { "back": "ドア", "front": "door" },
+    { "back": "まど", "front": "window" },
+    { "back": "ポスト", "front": "mailbox, postbox" },
+    { "back": "ビル", "front": "building" },
+    { "back": "こうえん", "front": "park" },
+    { "back": "きっさてん", "front": "coffee shop" },
+    { "back": "ほんや", "front": "bookstore" },
+    { "back": "~や", "front": "~ store" },
+    {
+      "back": "のりば",
+      "front": "a fixed place to catch taxis, trains, etc."
+    },
+    { "back": "けん", "front": "prefecture" },
+    { "back": "うえ", "front": "on, above, over" },
+    { "back": "した", "front": "under, below, beneath" },
+    { "back": "まえ", "front": "front, before" },
+    { "back": "うしろ", "front": "back, behind" },
+    { "back": "みぎ", "front": "right [side]" },
+    { "back": "ひだり", "front": "left [side]" },
+    { "back": "なか", "front": "in, inside" },
+    { "back": "そと", "front": "outside" },
+    { "back": "となり", "front": "next, next door" },
+    { "back": "ちかく", "front": "near, vicinity" },
+    { "back": "あいだ", "front": "between, among" },
+    { "back": "~や~[など]", "front": "~, ~, and so on" },
+    { "back": "いちばん~", "front": "the most ~ (いちばん うえ: the top)" },
+    {
+      "back": "~だんめ",
+      "front": "the ~th shelf (だん is the counter for shelves)"
+    },
+    { "back": "[どうも]すみません。", "front": "Thank you." },
+    { "back": "チリソース", "front": "chilli sauce" },
+    { "back": "おく", "front": "the back" },
+    { "back": "スパイスコーナー", "front": "spice corner" }
   ],
   "lesson11": [
     { "back": "こどもがいます", "front": "have [a child]" },
@@ -1293,686 +1287,686 @@
       "front": "Best of luck. (said when expecting a long separation)"
     }
   ],
-  "counting":[
-  {
-    "back": "ひとつ",
-    "front": "1"
-  },
-  {
-    "back": "ふたつ",
-    "front": "2"
-  },
-  {
-    "back": "みっつ",
-    "front": "3"
-  },
-  {
-    "back": "よっつ",
-    "front": "4"
-  },
-  {
-    "back": "いつつ",
-    "front": "5"
-  },
-  {
-    "back": "むっつ",
-    "front": "6"
-  },
-  {
-    "back": "ななつ",
-    "front": "7"
-  },
-  {
-    "back": "やっつ",
-    "front": "8"
-  },
-  {
-    "back": "ここのつ",
-    "front": "9"
-  },
-  {
-    "back": "とお",
-    "front": "10"
-  },
-  {
-    "back": "いっかい",
-    "front": "1 time"
-  },
-  {
-    "back": "にかい",
-    "front": "2 meetings"
-  },
-  {
-    "back": "さんかい",
-    "front": "3 appointments"
-  },
-  {
-    "back": "よんかい",
-    "front": "4 workouts"
-  },
-  {
-    "back": "ごかい",
-    "front": "5 races"
-  },
-  {
-    "back": "ろっかい",
-    "front": "6 events"
-  },
-  {
-    "back": "ななかい",
-    "front": "7 visits"
-  },
-  {
-    "back": "はっかい",
-    "front": "8 dinners"
-  },
-  {
-    "back": "きゅうかい",
-    "front": "9 matches"
-  },
-  {
-    "back": "じゅっかい",
-    "front": "10 lessons"
-  },
-  {
-    "back": "ひとり",
-    "front": "1 teacher"
-  },
-  {
-    "back": "ふたり",
-    "front": "2 chefs"
-  },
-  {
-    "back": "さんにん",
-    "front": "3 players"
-  },
-  {
-    "back": "よにん",
-    "front": "4 dancers"
-  },
-  {
-    "back": "ごにん",
-    "front": "5 students"
-  },
-  {
-    "back": "ろくにん",
-    "front": "6 scientists"
-  },
-  {
-    "back": "しちにん",
-    "front": "7 authors"
-  },
-  {
-    "back": "はちにん",
-    "front": "8 doctors"
-  },
-  {
-    "back": "きゅうにん",
-    "front": "9 artists"
-  },
-  {
-    "back": "じゅうにん",
-    "front": "10 musicians"
-  },
-  {
-    "back": "いちだい",
-    "front": "1 car"
-  },
-  {
-    "back": "にだい",
-    "front": "2 computers"
-  },
-  {
-    "back": "さんだい",
-    "front": "3 bicycles"
-  },
-  {
-    "back": "よんだい",
-    "front": "4 scooters"
-  },
-  {
-    "back": "ごだい",
-    "front": "5 washing machines"
-  },
-  {
-    "back": "ろくだい",
-    "front": "6 printers"
-  },
-  {
-    "back": "ななだい",
-    "front": "7 phones"
-  },
-  {
-    "back": "はちだい",
-    "front": "8 motorcycles"
-  },
-  {
-    "back": "きゅうだい",
-    "front": "9 fridges"
-  },
-  {
-    "back": "じゅうだい",
-    "front": "10 laptops"
-  },
-  {
-    "back": "いちまい",
-    "front": "1 sheet of paper"
-  },
-  {
-    "back": "にまい",
-    "front": "2 photos"
-  },
-  {
-    "back": "さんまい",
-    "front": "3 tickets"
-  },
-  {
-    "back": "よんまい",
-    "front": "4 towels"
-  },
-  {
-    "back": "ごまい",
-    "front": "5 postcards"
-  },
-  {
-    "back": "ろくまい",
-    "front": "6 napkins"
-  },
-  {
-    "back": "ななまい",
-    "front": "7 playing cards"
-  },
-  {
-    "back": "はちまい",
-    "front": "8 magazines"
-  },
-  {
-    "back": "きゅうまい",
-    "front": "9 certificates"
-  },
-  {
-    "back": "じゅうまい",
-    "front": "10 menus"
-  },
-  {
-    "back": "いちわ",
-    "front": "1 bird"
-  },
-  {
-    "back": "にわ",
-    "front": "2 chickens"
-  },
-  {
-    "back": "さんわ",
-    "front": "3 ducks"
-  },
-  {
-    "back": "よんわ",
-    "front": "4 parrots"
-  },
-  {
-    "back": "ごわ",
-    "front": "5 doves"
-  },
-  {
-    "back": "ろくわ",
-    "front": "6 pigeons"
-  },
-  {
-    "back": "ななわ",
-    "front": "7 seagulls"
-  },
-  {
-    "back": "はちわ",
-    "front": "8 eagles"
-  },
-  {
-    "back": "きゅうわ",
-    "front": "9 owls"
-  },
-  {
-    "back": "じゅうわ",
-    "front": "10 swans"
-  },
-  {
-    "back": "いっぴき",
-    "front": "1 cat"
-  },
-  {
-    "back": "にひき",
-    "front": "2 dogs"
-  },
-  {
-    "back": "さんびき",
-    "front": "3 hamsters"
-  },
-  {
-    "back": "よんひき",
-    "front": "4 goldfish"
-  },
-  {
-    "back": "ごひき",
-    "front": "5 rats"
-  },
-  {
-    "back": "ろっぴき",
-    "front": "6 kitsune"
-  },
-  {
-    "back": "ななひき",
-    "front": "7 frogs"
-  },
-  {
-    "back": "はっぴき",
-    "front": "8 lizards"
-  },
-  {
-    "back": "きゅうひき",
-    "front": "9 squirrels"
-  },
-  {
-    "back": "じゅっぴき",
-    "front": "10 monkeys"
-  },
-  {
-    "back": "いっぱん",
-    "front": "1 cup"
-  },
-  {
-    "back": "にはい",
-    "front": "2 bowls"
-  },
-  {
-    "back": "さんばい",
-    "front": "3 glasses"
-  },
-  {
-    "back": "よんはい",
-    "front": "4 mugs"
-  },
-  {
-    "back": "ごはい",
-    "front": "5 teacups"
-  },
-  {
-    "back": "ろっぱい",
-    "front": "6 coffee cups"
-  },
-  {
-    "back": "ななはい",
-    "front": "7 wine glasses"
-  },
-  {
-    "back": "はっぱい",
-    "front": "8 water bottles"
-  },
-  {
-    "back": "きゅうはい",
-    "front": "9 beer mugs"
-  },
-  {
-    "back": "じゅっぱい",
-    "front": "10 shot glasses"
-  },
-  {
-    "back": "いっこ",
-    "front": "1 cookie"
-  },
-  {
-    "back": "にこ",
-    "front": "2 balls"
-  },
-  {
-    "back": "さんこ",
-    "front": "3 apples"
-  },
-  {
-    "back": "よんこ",
-    "front": "4 donuts"
-  },
-  {
-    "back": "ごこ",
-    "front": "5 cupcakes"
-  },
-  {
-    "back": "ろっこ",
-    "front": "6 chocolates"
-  },
-  {
-    "back": "ななこ",
-    "front": "7 eggs"
-  },
-  {
-    "back": "はっこ",
-    "front": "8 boxes"
-  },
-  {
-    "back": "きゅうこ",
-    "front": "9 bricks"
-  },
-  {
-    "back": "じゅっこ",
-    "front": "10 pebbles"
-  },
-  {
-    "back": "いっさつ",
-    "front": "1 book"
-  },
-  {
-    "back": "にさつ",
-    "front": "2 notebooks"
-  },
-  {
-    "back": "さんさつ",
-    "front": "3 novels"
-  },
-  {
-    "back": "よんさつ",
-    "front": "4 journals"
-  },
-  {
-    "back": "ごさつ",
-    "front": "5 catalogs"
-  },
-  {
-    "back": "ろくさつ",
-    "front": "6 diaries"
-  },
-  {
-    "back": "ななさつ",
-    "front": "7 photo albums"
-  },
-  {
-    "back": "はっさつ",
-    "front": "8 textbooks"
-  },
-  {
-    "back": "きゅうさつ",
-    "front": "9 anthologies"
-  },
-  {
-    "back": "じゅっさつ",
-    "front": "10 encyclopedias"
-  },
-  {
-    "back": "いっとう",
-    "front": "1 elephant"
-  },
-  {
-    "back": "にとう",
-    "front": "2 horses"
-  },
-  {
-    "back": "さんとう",
-    "front": "3 cows"
-  },
-  {
-    "back": "よんとう",
-    "front": "4 pigs"
-  },
-  {
-    "back": "ごとう",
-    "front": "5 lions"
-  },
-  {
-    "back": "ろくとう",
-    "front": "6 giraffes"
-  },
-  {
-    "back": "ななとう",
-    "front": "7 camels"
-  },
-  {
-    "back": "はっとう",
-    "front": "8 rhinoceroses"
-  },
-  {
-    "back": "きゅうとう",
-    "front": "9 tigers"
-  },
-  {
-    "back": "じゅっとう",
-    "front": "10 bears"
-  },
-  {
-    "back": "いちじさんじゅっぷんにびょう",
-    "front": "1:30:02"
-  },
-  {
-    "back": "にじじゅっぷんごびょう",
-    "front": "2:10:05"
-  },
-  {
-    "back": "さんじにじゅうごふんよんびょう",
-    "front": "3:25:04"
-  },
-  {
-    "back": "よじごじゅっぷんろくびょう",
-    "front": "4:50:06"
-  },
-  {
-    "back": "ごじさんじゅっぷんはちびょう",
-    "front": "5:30:08"
-  },
-  {
-    "back": "ろくじよんじゅっぷんきゅうびょう",
-    "front": "6:40:09"
-  },
-  {
-    "back": "ななじごじゅうごふんにびょう",
-    "front": "7:55:02"
-  },
-  {
-    "back": "はちじごふんごびょう",
-    "front": "8:05:05"
-  },
-  {
-    "back": "くじにじゅうごふんろくびょう",
-    "front": "9:25:06"
-  },
-  {
-    "back": "じゅうじさんじゅうぷんななびょう",
-    "front": "10:30:07"
-  },
-  {
-  "back": "いっちょう",
-  "front": "1 direct route"
-},
-{
-  "back": "にちょう",
-  "front": "2 roads"
-},
-{
-  "back": "さんちょう",
-  "front": "3 streets"
-},
-{
-  "back": "よんちょう",
-  "front": "4 highways"
-},
-{
-  "back": "ごちょう",
-  "front": "5 paths"
-},
-{
-  "back": "ろくちょう",
-  "front": "6 lanes"
-},
-{
-  "back": "ななちょう",
-  "front": "7 tracks"
-},
-{
-  "back": "はちちょう",
-  "front": "8 boulevards"
-},
-{
-  "back": "きゅうちょう",
-  "front": "9 avenues"
-},
-{
-  "back": "じゅうちょう",
-  "front": "10 expressways"
-},
-{
-  "back": "いけん",
-  "front": "1 case"
-},
-{
-  "back": "にけん",
-  "front": "2 incidents"
-},
-{
-  "back": "さんけん",
-  "front": "3 complaints"
-},
-{
-  "back": "よんけん",
-  "front": "4 situations"
-},
-{
-  "back": "ごけん",
-  "front": "5 reports"
-},
-{
-  "back": "ろっけん",
-  "front": "6 matters"
-},
-{
-  "back": "ななけん",
-  "front": "7 problems"
-},
-{
-  "back": "はっけん",
-  "front": "8 incidents"
-},
-{
-  "back": "きゅうけん",
-  "front": "9 cases"
-},
-{
-  "back": "じゅっけん",
-  "front": "10 events"
-},
-{
-  "back": "いっそく",
-  "front": "1 pair of shoes"
-},
-{
-  "back": "にぞく",
-  "front": "2 pairs of socks"
-},
-{
-  "back": "さんぞく",
-  "front": "3 pairs of gloves"
-},
-{
-  "back": "よんぞく",
-  "front": "4 pairs of boots"
-},
-{
-  "back": "ごぞく",
-  "front": "5 pairs of sandals"
-},
-{
-  "back": "ろくぞく",
-  "front": "6 pairs of slippers"
-},
-{
-  "back": "ななぞく",
-  "front": "7 pairs of shoes"
-},
-{
-  "back": "はちぞく",
-  "front": "8 pairs of heels"
-},
-{
-  "back": "きゅうぞく",
-  "front": "9 pairs of shoes"
-},
-{
-  "back": "じゅうぞく",
-  "front": "10 pairs of boots"
-},
-{
-  "back": "いったま",
-  "front": "1 ball"
-},
-{
-  "back": "にたま",
-  "front": "2 marbles"
-},
-{
-  "back": "さんたま",
-  "front": "3 tennis balls"
-},
-{
-  "back": "よんたま",
-  "front": "4 footballs"
-},
-{
-  "back": "ごたま",
-  "front": "5 basketballs"
-},
-{
-  "back": "ろくたま",
-  "front": "6 baseballs"
-},
-{
-  "back": "ななたま",
-  "front": "7 golf balls"
-},
-{
-  "back": "はちたま",
-  "front": "8 ping pong balls"
-},
-{
-  "back": "きゅうたま",
-  "front": "9 rubber balls"
-},
-{
-  "back": "じゅうたま",
-  "front": "10 softballs"
-},
-{
-  "back": "いっきょく",
-  "front": "1 piece of music"
-},
-{
-  "back": "にきょく",
-  "front": "2 pieces of music"
-},
-{
-  "back": "さんきょく",
-  "front": "3 musical compositions"
-},
-{
-  "back": "よんきょく",
-  "front": "4 songs"
-},
-{
-  "back": "ごきょく",
-  "front": "5 melodies"
-},
-{
-  "back": "ろっきょく",
-  "front": "6 tunes"
-},
-{
-  "back": "ななきょく",
-  "front": "7 ballads"
-},
-{
-  "back": "はっきょく",
-  "front": "8 tracks"
-},
-{
-  "back": "きゅうきょく",
-  "front": "9 symphonies"
-},
-{
-  "back": "じゅっきょく",
-  "front": "10 choruses"
-}
-]
+  "counting": [
+    {
+      "back": "ひとつ",
+      "front": "1"
+    },
+    {
+      "back": "ふたつ",
+      "front": "2"
+    },
+    {
+      "back": "みっつ",
+      "front": "3"
+    },
+    {
+      "back": "よっつ",
+      "front": "4"
+    },
+    {
+      "back": "いつつ",
+      "front": "5"
+    },
+    {
+      "back": "むっつ",
+      "front": "6"
+    },
+    {
+      "back": "ななつ",
+      "front": "7"
+    },
+    {
+      "back": "やっつ",
+      "front": "8"
+    },
+    {
+      "back": "ここのつ",
+      "front": "9"
+    },
+    {
+      "back": "とお",
+      "front": "10"
+    },
+    {
+      "back": "いっかい",
+      "front": "1 time"
+    },
+    {
+      "back": "にかい",
+      "front": "2 meetings"
+    },
+    {
+      "back": "さんかい",
+      "front": "3 appointments"
+    },
+    {
+      "back": "よんかい",
+      "front": "4 workouts"
+    },
+    {
+      "back": "ごかい",
+      "front": "5 races"
+    },
+    {
+      "back": "ろっかい",
+      "front": "6 events"
+    },
+    {
+      "back": "ななかい",
+      "front": "7 visits"
+    },
+    {
+      "back": "はっかい",
+      "front": "8 dinners"
+    },
+    {
+      "back": "きゅうかい",
+      "front": "9 matches"
+    },
+    {
+      "back": "じゅっかい",
+      "front": "10 lessons"
+    },
+    {
+      "back": "ひとり",
+      "front": "1 teacher"
+    },
+    {
+      "back": "ふたり",
+      "front": "2 chefs"
+    },
+    {
+      "back": "さんにん",
+      "front": "3 players"
+    },
+    {
+      "back": "よにん",
+      "front": "4 dancers"
+    },
+    {
+      "back": "ごにん",
+      "front": "5 students"
+    },
+    {
+      "back": "ろくにん",
+      "front": "6 scientists"
+    },
+    {
+      "back": "しちにん",
+      "front": "7 authors"
+    },
+    {
+      "back": "はちにん",
+      "front": "8 doctors"
+    },
+    {
+      "back": "きゅうにん",
+      "front": "9 artists"
+    },
+    {
+      "back": "じゅうにん",
+      "front": "10 musicians"
+    },
+    {
+      "back": "いちだい",
+      "front": "1 car"
+    },
+    {
+      "back": "にだい",
+      "front": "2 computers"
+    },
+    {
+      "back": "さんだい",
+      "front": "3 bicycles"
+    },
+    {
+      "back": "よんだい",
+      "front": "4 scooters"
+    },
+    {
+      "back": "ごだい",
+      "front": "5 washing machines"
+    },
+    {
+      "back": "ろくだい",
+      "front": "6 printers"
+    },
+    {
+      "back": "ななだい",
+      "front": "7 phones"
+    },
+    {
+      "back": "はちだい",
+      "front": "8 motorcycles"
+    },
+    {
+      "back": "きゅうだい",
+      "front": "9 fridges"
+    },
+    {
+      "back": "じゅうだい",
+      "front": "10 laptops"
+    },
+    {
+      "back": "いちまい",
+      "front": "1 sheet of paper"
+    },
+    {
+      "back": "にまい",
+      "front": "2 photos"
+    },
+    {
+      "back": "さんまい",
+      "front": "3 tickets"
+    },
+    {
+      "back": "よんまい",
+      "front": "4 towels"
+    },
+    {
+      "back": "ごまい",
+      "front": "5 postcards"
+    },
+    {
+      "back": "ろくまい",
+      "front": "6 napkins"
+    },
+    {
+      "back": "ななまい",
+      "front": "7 playing cards"
+    },
+    {
+      "back": "はちまい",
+      "front": "8 magazines"
+    },
+    {
+      "back": "きゅうまい",
+      "front": "9 certificates"
+    },
+    {
+      "back": "じゅうまい",
+      "front": "10 menus"
+    },
+    {
+      "back": "いちわ",
+      "front": "1 bird"
+    },
+    {
+      "back": "にわ",
+      "front": "2 chickens"
+    },
+    {
+      "back": "さんわ",
+      "front": "3 ducks"
+    },
+    {
+      "back": "よんわ",
+      "front": "4 parrots"
+    },
+    {
+      "back": "ごわ",
+      "front": "5 doves"
+    },
+    {
+      "back": "ろくわ",
+      "front": "6 pigeons"
+    },
+    {
+      "back": "ななわ",
+      "front": "7 seagulls"
+    },
+    {
+      "back": "はちわ",
+      "front": "8 eagles"
+    },
+    {
+      "back": "きゅうわ",
+      "front": "9 owls"
+    },
+    {
+      "back": "じゅうわ",
+      "front": "10 swans"
+    },
+    {
+      "back": "いっぴき",
+      "front": "1 cat"
+    },
+    {
+      "back": "にひき",
+      "front": "2 dogs"
+    },
+    {
+      "back": "さんびき",
+      "front": "3 hamsters"
+    },
+    {
+      "back": "よんひき",
+      "front": "4 goldfish"
+    },
+    {
+      "back": "ごひき",
+      "front": "5 rats"
+    },
+    {
+      "back": "ろっぴき",
+      "front": "6 kitsune"
+    },
+    {
+      "back": "ななひき",
+      "front": "7 frogs"
+    },
+    {
+      "back": "はっぴき",
+      "front": "8 lizards"
+    },
+    {
+      "back": "きゅうひき",
+      "front": "9 squirrels"
+    },
+    {
+      "back": "じゅっぴき",
+      "front": "10 monkeys"
+    },
+    {
+      "back": "いっぱい",
+      "front": "1 cup"
+    },
+    {
+      "back": "にはい",
+      "front": "2 bowls"
+    },
+    {
+      "back": "さんばい",
+      "front": "3 glasses"
+    },
+    {
+      "back": "よんはい",
+      "front": "4 mugs"
+    },
+    {
+      "back": "ごはい",
+      "front": "5 teacups"
+    },
+    {
+      "back": "ろっぱい",
+      "front": "6 coffee cups"
+    },
+    {
+      "back": "ななはい",
+      "front": "7 wine glasses"
+    },
+    {
+      "back": "はっぱい",
+      "front": "8 water bottles"
+    },
+    {
+      "back": "きゅうはい",
+      "front": "9 beer mugs"
+    },
+    {
+      "back": "じゅっぱい",
+      "front": "10 shot glasses"
+    },
+    {
+      "back": "いっこ",
+      "front": "1 cookie"
+    },
+    {
+      "back": "にこ",
+      "front": "2 balls"
+    },
+    {
+      "back": "さんこ",
+      "front": "3 apples"
+    },
+    {
+      "back": "よんこ",
+      "front": "4 donuts"
+    },
+    {
+      "back": "ごこ",
+      "front": "5 cupcakes"
+    },
+    {
+      "back": "ろっこ",
+      "front": "6 chocolates"
+    },
+    {
+      "back": "ななこ",
+      "front": "7 eggs"
+    },
+    {
+      "back": "はっこ",
+      "front": "8 boxes"
+    },
+    {
+      "back": "きゅうこ",
+      "front": "9 bricks"
+    },
+    {
+      "back": "じゅっこ",
+      "front": "10 pebbles"
+    },
+    {
+      "back": "いっさつ",
+      "front": "1 book"
+    },
+    {
+      "back": "にさつ",
+      "front": "2 notebooks"
+    },
+    {
+      "back": "さんさつ",
+      "front": "3 novels"
+    },
+    {
+      "back": "よんさつ",
+      "front": "4 journals"
+    },
+    {
+      "back": "ごさつ",
+      "front": "5 catalogs"
+    },
+    {
+      "back": "ろくさつ",
+      "front": "6 diaries"
+    },
+    {
+      "back": "ななさつ",
+      "front": "7 photo albums"
+    },
+    {
+      "back": "はっさつ",
+      "front": "8 textbooks"
+    },
+    {
+      "back": "きゅうさつ",
+      "front": "9 anthologies"
+    },
+    {
+      "back": "じゅっさつ",
+      "front": "10 encyclopedias"
+    },
+    {
+      "back": "いっとう",
+      "front": "1 elephant"
+    },
+    {
+      "back": "にとう",
+      "front": "2 horses"
+    },
+    {
+      "back": "さんとう",
+      "front": "3 cows"
+    },
+    {
+      "back": "よんとう",
+      "front": "4 pigs"
+    },
+    {
+      "back": "ごとう",
+      "front": "5 lions"
+    },
+    {
+      "back": "ろくとう",
+      "front": "6 giraffes"
+    },
+    {
+      "back": "ななとう",
+      "front": "7 camels"
+    },
+    {
+      "back": "はっとう",
+      "front": "8 rhinoceroses"
+    },
+    {
+      "back": "きゅうとう",
+      "front": "9 tigers"
+    },
+    {
+      "back": "じゅっとう",
+      "front": "10 bears"
+    },
+    {
+      "back": "いちじさんじゅっぷんにびょう",
+      "front": "1:30:02"
+    },
+    {
+      "back": "にじじゅっぷんごびょう",
+      "front": "2:10:05"
+    },
+    {
+      "back": "さんじにじゅうごふんよんびょう",
+      "front": "3:25:04"
+    },
+    {
+      "back": "よじごじゅっぷんろくびょう",
+      "front": "4:50:06"
+    },
+    {
+      "back": "ごじはん",
+      "front": "5:30"
+    },
+    {
+      "back": "ろくじよんじゅっぷんきゅうびょう",
+      "front": "6:40:09"
+    },
+    {
+      "back": "ななじごじゅうごふんにびょう",
+      "front": "7:55:02"
+    },
+    {
+      "back": "はちじごふんごびょう",
+      "front": "8:05:05"
+    },
+    {
+      "back": "くじにじゅうごふんろくびょう",
+      "front": "9:25:06"
+    },
+    {
+      "back": "じゅうじさんじゅうぷんななびょう",
+      "front": "10:30:07"
+    },
+    {
+      "back": "いっちょう",
+      "front": "1 direct route"
+    },
+    {
+      "back": "にちょう",
+      "front": "2 roads"
+    },
+    {
+      "back": "さんちょう",
+      "front": "3 streets"
+    },
+    {
+      "back": "よんちょう",
+      "front": "4 highways"
+    },
+    {
+      "back": "ごちょう",
+      "front": "5 paths"
+    },
+    {
+      "back": "ろくちょう",
+      "front": "6 lanes"
+    },
+    {
+      "back": "ななちょう",
+      "front": "7 tracks"
+    },
+    {
+      "back": "はちちょう",
+      "front": "8 boulevards"
+    },
+    {
+      "back": "きゅうちょう",
+      "front": "9 avenues"
+    },
+    {
+      "back": "じゅうちょう",
+      "front": "10 expressways"
+    },
+    {
+      "back": "いけん",
+      "front": "1 case"
+    },
+    {
+      "back": "にけん",
+      "front": "2 incidents"
+    },
+    {
+      "back": "さんけん",
+      "front": "3 complaints"
+    },
+    {
+      "back": "よんけん",
+      "front": "4 situations"
+    },
+    {
+      "back": "ごけん",
+      "front": "5 reports"
+    },
+    {
+      "back": "ろっけん",
+      "front": "6 matters"
+    },
+    {
+      "back": "ななけん",
+      "front": "7 problems"
+    },
+    {
+      "back": "はっけん",
+      "front": "8 incidents"
+    },
+    {
+      "back": "きゅうけん",
+      "front": "9 cases"
+    },
+    {
+      "back": "じゅっけん",
+      "front": "10 events"
+    },
+    {
+      "back": "いっそく",
+      "front": "1 pair of shoes"
+    },
+    {
+      "back": "にぞく",
+      "front": "2 pairs of socks"
+    },
+    {
+      "back": "さんぞく",
+      "front": "3 pairs of gloves"
+    },
+    {
+      "back": "よんぞく",
+      "front": "4 pairs of boots"
+    },
+    {
+      "back": "ごぞく",
+      "front": "5 pairs of sandals"
+    },
+    {
+      "back": "ろくぞく",
+      "front": "6 pairs of slippers"
+    },
+    {
+      "back": "ななぞく",
+      "front": "7 pairs of shoes"
+    },
+    {
+      "back": "はちぞく",
+      "front": "8 pairs of heels"
+    },
+    {
+      "back": "きゅうぞく",
+      "front": "9 pairs of shoes"
+    },
+    {
+      "back": "じゅうぞく",
+      "front": "10 pairs of boots"
+    },
+    {
+      "back": "いったま",
+      "front": "1 ball"
+    },
+    {
+      "back": "にたま",
+      "front": "2 marbles"
+    },
+    {
+      "back": "さんたま",
+      "front": "3 tennis balls"
+    },
+    {
+      "back": "よんたま",
+      "front": "4 footballs"
+    },
+    {
+      "back": "ごたま",
+      "front": "5 basketballs"
+    },
+    {
+      "back": "ろくたま",
+      "front": "6 baseballs"
+    },
+    {
+      "back": "ななたま",
+      "front": "7 golf balls"
+    },
+    {
+      "back": "はちたま",
+      "front": "8 ping pong balls"
+    },
+    {
+      "back": "きゅうたま",
+      "front": "9 rubber balls"
+    },
+    {
+      "back": "じゅうたま",
+      "front": "10 softballs"
+    },
+    {
+      "back": "いっきょく",
+      "front": "1 piece of music"
+    },
+    {
+      "back": "にきょく",
+      "front": "2 pieces of music"
+    },
+    {
+      "back": "さんきょく",
+      "front": "3 musical compositions"
+    },
+    {
+      "back": "よんきょく",
+      "front": "4 songs"
+    },
+    {
+      "back": "ごきょく",
+      "front": "5 melodies"
+    },
+    {
+      "back": "ろっきょく",
+      "front": "6 tunes"
+    },
+    {
+      "back": "ななきょく",
+      "front": "7 ballads"
+    },
+    {
+      "back": "はっきょく",
+      "front": "8 tracks"
+    },
+    {
+      "back": "きゅうきょく",
+      "front": "9 symphonies"
+    },
+    {
+      "back": "じゅっきょく",
+      "front": "10 choruses"
+    }
+  ]
 }
