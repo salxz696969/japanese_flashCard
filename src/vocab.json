@@ -1809,6 +1809,46 @@
       "front": "10 expressways"
     },
     {
+      "back": "いっけん",
+      "front": "1 house"
+    },
+    {
+      "back": "にけん",
+      "front": "2 buildings"
+    },
+    {
+      "back": "さんけん",
+      "front": "3 schools"
+    },
+    {
+      "back": "よんけん",
+      "front": "4 prisons"
+    },
+    {
+      "back": "ごけん",
+      "front": "5 homes"
+    },
+    {
+      "back": "ろっけん",
+      "front": "6 stores"
+    },
+    {
+      "back": "ななけん",
+      "front": "7 restaurants"
+    },
+    {
+      "back": "はっけん",
+      "front": "8 schools"
+    },
+    {
+      "back": "きゅうけん",
+      "front": "9 universities"
+    },
+    {
+      "back": "じゅっけん",
+      "front": "10 hotels"
+    },
+    {
       "back": "いけん",
       "front": "1 case"
     },
