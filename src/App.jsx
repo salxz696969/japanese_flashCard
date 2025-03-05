@@ -10,29 +10,14 @@ const App = () => {
   const [normalOrRemember, setNormalOrRemember] = useState("normal");
   const [answer, setAnswer] = useState("");
   const [answerColor, setAnswerColor] = useState("");
-  const [lessonVocab, setLessonVocab] = useState("");
-  const [mode, setMode] = useState("");
-  const [indCard, setIndCard]= useState(new Array(0).fill("front"));
-
-  useEffect(() => {
-    const lastLesson = localStorage.getItem("lastLesson");
-    if (lastLesson.length > 0) {
-      setLessonVocab(lastLesson);
-      console.log(lastLesson);
-    }
-  }, []);
-
-  useEffect(() => {
-    setIndCard(Array(flashCard.length).fill("front"))
-  }, [flashCard]);
-
-  useEffect(() => {
-    const lastMode = localStorage.getItem("lastMode");
-    if (lastMode.length > 0) {
-      setMode(lastMode);
-    }
-  }, []);
-
+  const [lessonVocab, setLessonVocab] = useState(() =>
+    localStorage.getItem("lastLesson") || "lesson1"
+  );
+  const [mode, setMode] = useState(() =>
+    localStorage.getItem("lastMode") || "quiz"
+  );
+  const [indCard, setIndCard] = useState(new Array(0).fill("front"));
+  // localStorage.clear();
   useEffect(() => {
     localStorage.setItem("lastLesson", lessonVocab);
     if (vocabListFromFile[lessonVocab]) {
@@ -44,6 +29,10 @@ const App = () => {
   useEffect(() => {
     localStorage.setItem("lastMode", mode);
   }, [mode]);
+
+  useEffect(() => {
+    setIndCard(Array(flashCard.length).fill("front"));
+  }, [flashCard]);
 
   const changeNormalOrRemember = () => {
     if (normalOrRemember === "normal" && rememberList.length > 0) {
