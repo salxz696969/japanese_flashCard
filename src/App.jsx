@@ -10,25 +10,31 @@ const App = () => {
   const [normalOrRemember, setNormalOrRemember] = useState("normal");
   const [answer, setAnswer] = useState("");
   const [answerColor, setAnswerColor] = useState("");
-  const [lessonVocab, setLessonVocab] = useState("lesson1");
-  // localStorage.clear();
-  useEffect(() => {
-    const localVocabList = localStorage.getItem("localVocabList");
-    if (localVocabList) {
-      const parsedVocab = JSON.parse(localVocabList);
-      setFlashCard(parsedVocab[lessonVocab]);
-    } else {
-      localStorage.setItem("localVocabList", JSON.stringify(vocabListFromFile));
-      setFlashCard([...vocabListFromFile[lessonVocab]]);
-    }
-    const localRemberList = localStorage.getItem("localRemList");
-    if (localRemberList) {
-      const parsedRem = JSON.parse(localRemberList);
-      setRememberList(parsedRem);
-    }
-  }, [lessonVocab]);
+  const [lessonVocab, setLessonVocab] = useState("");
+  const [mode, setMode] = useState("");
+  const [indCard, setIndCard]= useState(new Array(0).fill("front"));
 
   useEffect(() => {
+    const lastLesson = localStorage.getItem("lastLesson");
+    if (lastLesson.length > 0) {
+      setLessonVocab(lastLesson);
+      console.log(lastLesson);
+    }
+  }, []);
+
+  useEffect(() => {
+    setIndCard(Array(flashCard.length).fill("front"))
+  }, [flashCard]);
+
+  useEffect(() => {
+    const lastMode = localStorage.getItem("lastMode");
+    if (lastMode.length > 0) {
+      setMode(lastMode);
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("lastLesson", lessonVocab);
     if (vocabListFromFile[lessonVocab]) {
       setFlashCard([...vocabListFromFile[lessonVocab]]);
       setCardID(0);
@@ -36,20 +42,8 @@ const App = () => {
   }, [lessonVocab]);
 
   useEffect(() => {
-    if (flashCard.length > 0) {
-      localStorage.setItem("localVocabList", JSON.stringify(flashCard));
-      console.log(JSON.parse(localStorage.getItem("localVocabList")));
-      console.log(JSON.parse(localStorage.getItem("localRemList")));
-    }
-  }, [flashCard]);
-
-  useEffect(() => {
-    if (rememberList.length > 0) {
-      localStorage.setItem("localRemList", JSON.stringify(rememberList));
-      console.log(JSON.parse(localStorage.getItem("localVocabList")));
-      console.log(JSON.parse(localStorage.getItem("localRemList")));
-    }
-  }, [rememberList]);
+    localStorage.setItem("lastMode", mode);
+  }, [mode]);
 
   const changeNormalOrRemember = () => {
     if (normalOrRemember === "normal" && rememberList.length > 0) {
@@ -97,6 +91,7 @@ const App = () => {
       setCardID(0);
     }
   }
+
   function checkAnswer() {
     if (answer === flashCard[cardID]["back"]) {
       setAnswerColor("green");
@@ -145,6 +140,104 @@ const App = () => {
       checkAnswer();
     }
   };
+  const quiz = () => {
+    return (
+      <div id="quiz">
+        <div id="showBlahBlah">
+          <button
+            id="show1"
+            onClick={() => setNormalOrRemember("normal")}
+            style={
+              normalOrRemember === "normal"
+                ? { backgroundColor: "#C6E7FF" }
+                : { backgroundColor: "#ffffff" }
+            }
+          >
+            Show normal
+          </button>
+
+          <button
+            id="show2"
+            onClick={() => setNormalOrRemember("remember")}
+            style={
+              normalOrRemember === "remember" && rememberList.length > 0
+                ? { backgroundColor: "#C6E7FF" }
+                : { backgroundColor: "#ffffff" }
+            }
+          >
+            Show remember
+          </button>
+        </div>
+
+        <button
+          style={{
+            backgroundColor: `${answerColor}`,
+          }}
+          onClick={updateFrontAndBack}
+          id="display"
+        >
+          {normalOrRemember === "normal"
+            ? flashCard.length === 0
+              ? "ありがとう！何か練習したいことがあれば聞いてね！💪✨"
+              : flashCard[cardID]?.[frontOrBack]
+            : rememberList.length === 0
+            ? "ありがとう！何か練習したいことがあれば聞いてね！💪✨"
+            : rememberList[remCardID][frontOrBack]}
+        </button>
+
+        <div id="box">
+          <input
+            id="inputBtn"
+            type="text"
+            value={answer}
+            onChange={(e) => setAnswer(e.target.value)}
+            onKeyDown={(e) => handleClick(e)}
+            placeholder="Type the correct answer..."
+          />
+          <br />
+
+          <br />
+
+          <button onClick={() => backWard()} className="navR">
+            {"<"}
+          </button>
+          <button onClick={() => forward()} className="navL">
+            {">"}
+          </button>
+
+          <br />
+
+          <button onClick={() => moveToRememberList()} id="rem">
+            {normalOrRemember === "normal" ? "Remember" : "Study again"}
+          </button>          
+        </div>
+      </div>
+    );
+  };
+  const updateInd = (index) => {
+    setIndCard((prev) =>
+      prev.map((e, i) => {
+        if(i===index){
+          e=e==="front"? "back":"front";
+        }
+        return e;
+      })
+    );
+  };
+  
+  const study = () => {
+    return flashCard.map((e, index) => {
+      return (
+        <button
+          key={index}
+          onClick={()=>updateInd(index)}
+        >
+          {e[indCard[index]]}
+        </button>
+      );
+    });
+  };
+
   return (
     <div id="container">
       <select
@@ -181,57 +274,18 @@ const App = () => {
         <option value="counting">counting</option>
       </select>
       <div id="show">
-        <button id="show1" onClick={() => setNormalOrRemember("normal")} style={normalOrRemember==="normal"? {backgroundColor:"#C6E7FF"}: {backgroundColor:"#ffffff"}}>
-          Show normal
-        </button>
-        <button id="show2" onClick={() => setNormalOrRemember("remember")} style={normalOrRemember==="remember"&&rememberList.length>0? {backgroundColor:"#C6E7FF"}: {backgroundColor:"#ffffff"}}>
-          Show remember
-        </button>
-      </div>
-      <button
-        style={{
-          backgroundColor: `${answerColor}`,
-        }}
-        onClick={updateFrontAndBack}
-        id="display"
-      >
-        {normalOrRemember == "normal"
-          ? flashCard.length === 0
-            ? "ありがとう！何か練習したいことがあれば聞いてね！💪✨"
-            : flashCard[cardID]?.[frontOrBack]
-          : rememberList.length === 0
-          ? "ありがとう！何か練習したいことがあれば聞いてね！💪✨"
-          : rememberList[remCardID][frontOrBack]}
-      </button>
-      <div id="box">
-        <input
-          id="inputBtn"
-          type="text"
-          value={answer}
-          onChange={(e) => setAnswer(e.target.value)}
-          onKeyDown={(e) => handleClick(e)}
-          placeholder="Type the correct answer..."
-        />
-        <br />
-
-        <br />
-        <button onClick={() => backWard()} className="navR">
-          {"<"}
-        </button>
-        <button onClick={() => forward()} className="navL">
-          {">"}
-        </button>
-        <br />
-        <button onClick={() => moveToRememberList()} id="rem">
-          {normalOrRemember === "normal" ? "Remember" : "Study again"}
-        </button>
-
-        <button id="con1" onClick={() => shuffle()}>
-          Shuffle
-        </button>
-        <button id="con2" onClick={() => localStorage.clear()}>
-          Clear memory
-        </button>
+        {mode === "quiz" ? quiz() : <div id="study">{study()}</div>}
+        <div id="connn">
+          <button id="con1" onClick={() => shuffle()}>
+              Shuffle
+            </button>
+          <button
+            id="mode"
+            onClick={() => (mode === "quiz" ? setMode("study") : setMode("quiz"))}
+          >
+            {mode === "quiz" ? "Study mode" : "Quiz mode"}
+          </button>
+        </div>
       </div>
     </div>
   );
