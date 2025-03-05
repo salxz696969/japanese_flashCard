@@ -10,14 +10,13 @@ const App = () => {
   const [normalOrRemember, setNormalOrRemember] = useState("normal");
   const [answer, setAnswer] = useState("");
   const [answerColor, setAnswerColor] = useState("");
-  const [lessonVocab, setLessonVocab] = useState(() =>
-    localStorage.getItem("lastLesson") || "lesson1"
+  const [lessonVocab, setLessonVocab] = useState(
+    () => localStorage.getItem("lastLesson") || "lesson1"
   );
-  const [mode, setMode] = useState(() =>
-    localStorage.getItem("lastMode") || "quiz"
+  const [mode, setMode] = useState(
+    () => localStorage.getItem("lastMode") || "quiz"
   );
   const [indCard, setIndCard] = useState(new Array(0).fill("front"));
-  // localStorage.clear();
   useEffect(() => {
     localStorage.setItem("lastLesson", lessonVocab);
     if (vocabListFromFile[lessonVocab]) {
@@ -29,6 +28,10 @@ const App = () => {
   useEffect(() => {
     localStorage.setItem("lastMode", mode);
   }, [mode]);
+
+  useEffect(()=>{
+    
+  })
 
   useEffect(() => {
     setIndCard(Array(flashCard.length).fill("front"));
@@ -198,7 +201,7 @@ const App = () => {
 
           <button onClick={() => moveToRememberList()} id="rem">
             {normalOrRemember === "normal" ? "Remember" : "Study again"}
-          </button>          
+          </button>
         </div>
       </div>
     );
@@ -206,21 +209,18 @@ const App = () => {
   const updateInd = (index) => {
     setIndCard((prev) =>
       prev.map((e, i) => {
-        if(i===index){
-          e=e==="front"? "back":"front";
+        if (i === index) {
+          e = e === "front" ? "back" : "front";
         }
         return e;
       })
     );
   };
-  
+
   const study = () => {
     return flashCard.map((e, index) => {
       return (
-        <button
-          key={index}
-          onClick={()=>updateInd(index)}
-        >
+        <button key={index} onClick={() => updateInd(index)}>
           {e[indCard[index]]}
         </button>
       );
@@ -266,11 +266,13 @@ const App = () => {
         {mode === "quiz" ? quiz() : <div id="study">{study()}</div>}
         <div id="connn">
           <button id="con1" onClick={() => shuffle()}>
-              Shuffle
-            </button>
+            Shuffle
+          </button>
           <button
             id="mode"
-            onClick={() => (mode === "quiz" ? setMode("study") : setMode("quiz"))}
+            onClick={() =>
+              mode === "quiz" ? setMode("study") : setMode("quiz")
+            }
           >
             {mode === "quiz" ? "Study mode" : "Quiz mode"}
           </button>
