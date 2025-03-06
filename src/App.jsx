@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
-import vocabListFromFile from "./vocab.json";
 import "./styling.css";
+import axios from 'axios'
 const App = () => {
+  const [vocabList, setVocabList]= useState([]);
   const [cardID, setCardID] = useState(0);
   const [remCardID, setRemCardID] = useState(0);
   const [frontOrBack, setFrontOrBack] = useState("front");
@@ -17,13 +18,27 @@ const App = () => {
     () => localStorage.getItem("lastMode") || "quiz"
   );
   const [indCard, setIndCard] = useState(new Array(0).fill("front"));
+
+  const fetchAPI = async () => {
+    try {
+      const response = await axios.get("http://localhost:8080/api");
+      setVocabList(response.data);
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    }
+  };
+
+  useEffect(()=>{
+    fetchAPI();
+  }, [])
+
   useEffect(() => {
     localStorage.setItem("lastLesson", lessonVocab);
-    if (vocabListFromFile[lessonVocab]) {
-      setFlashCard([...vocabListFromFile[lessonVocab]]);
+    if (vocabList[lessonVocab]) {
+      setFlashCard([...vocabList[lessonVocab]]);
       setCardID(0);
     }
-  }, [lessonVocab]);
+  }, [lessonVocab, vocabList]);
 
   useEffect(() => {
     localStorage.setItem("lastMode", mode);
