@@ -36,7 +36,7 @@ const App = () => {
     e.preventDefault(); // Prevent default touch behavior
     holdTimer.current = setTimeout(() => {
       showMenu(e, index); // Show context menu on long press
-    }, 600); // Long press duration (600ms)
+    }, 200); // Long press duration (600ms)
   };
   
   const handleTouchEnd = () => {
