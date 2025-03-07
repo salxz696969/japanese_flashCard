@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import vocabListFromFile from "./vocab.json";
 import "./styling.css";
 const App = () => {
@@ -17,6 +17,58 @@ const App = () => {
     () => localStorage.getItem("lastMode") || "quiz"
   );
   const [indCard, setIndCard] = useState(new Array(0).fill("front"));
+
+  const [activeIndex, setActiveIndex] = useState(null);
+  const [menuPosition, setMenuPosition] = useState({ x: 0, y: 0 });
+  const holdTimer = useRef(null);
+
+  // Long Press Handler
+  const handleMouseDown = (e, index) => {
+    holdTimer.current = setTimeout(() => {
+      showMenu(e, index);
+    }, 200); // 600ms for long press
+  };
+
+  const handleMouseUp = () => clearTimeout(holdTimer.current);
+  const handleMouseLeave = () => clearTimeout(holdTimer.current);
+  
+  const handleTouchStart = (e, index) => {
+    e.preventDefault(); // Prevent default touch behavior
+    holdTimer.current = setTimeout(() => {
+      showMenu(e, index); // Show context menu on long press
+    }, 600); // Long press duration (600ms)
+  };
+  
+  const handleTouchEnd = () => {
+    clearTimeout(holdTimer.current); // Clear the timer when touch ends
+  };
+
+  const handleContextMenu = (e, index) => {
+    e.preventDefault();
+    showMenu(e, index);
+  };
+
+  const showMenu = (e, index) => {
+    setActiveIndex(index); // Track which button was clicked
+    setMenuPosition({ x: e.pageX, y: e.pageY });
+  };
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (!event.target.closest(".context-menu")) {
+        setActiveIndex(null);
+      }
+    };
+
+    if (activeIndex !== null) {
+      document.addEventListener("click", handleClickOutside);
+    } else {
+      document.removeEventListener("click", handleClickOutside);
+    }
+
+    return () => document.removeEventListener("click", handleClickOutside);
+  }, [activeIndex]);
+
   useEffect(() => {
     localStorage.setItem("lastLesson", lessonVocab);
     if (vocabListFromFile[lessonVocab]) {
@@ -29,9 +81,6 @@ const App = () => {
     localStorage.setItem("lastMode", mode);
   }, [mode]);
 
-  useEffect(()=>{
-    
-  })
 
   useEffect(() => {
     setIndCard(Array(flashCard.length).fill("front"));
@@ -199,7 +248,12 @@ const App = () => {
 
           <br />
 
-          <button onClick={() => moveToRememberList()} id="rem">
+          <button
+            onClick={() => {
+              moveToRememberList();
+            }}
+            id="rem"
+          >
             {normalOrRemember === "normal" ? "Remember" : "Study again"}
           </button>
         </div>
@@ -220,9 +274,38 @@ const App = () => {
   const study = () => {
     return flashCard.map((e, index) => {
       return (
-        <button key={index} onClick={() => updateInd(index)}>
-          {e[indCard[index]]}
-        </button>
+        <div key={index} className="relative">
+          <button
+            onClick={() => updateInd(index)}
+            onMouseDown={(event) => handleMouseDown(event, index)}
+            onMouseUp={handleMouseUp}
+            onMouseLeave={handleMouseLeave}
+            onTouchStart={(event) => handleTouchStart(event, index)}
+            onTouchEnd={handleTouchEnd}
+            onContextMenu={(event) => handleContextMenu(event, index)}
+            className={`p-3 bg-blue-500 text-white rounded ${activeIndex === index ? "highlighted-button" : ""}`}
+          >
+            {e[indCard[index]]}
+          </button>
+
+          {activeIndex === index && (
+            <div
+            className="context-menu"
+            style={{
+              height:"50px",
+              width: "150px",
+              top: menuPosition.y,
+              left: menuPosition.x,
+              zIndex: 1000,
+              position: "absolute",
+            }}
+            >
+              <button onClick={() => {
+                setFlashCard(flashCard.filter((_, i) => i !== index));
+              }}>Remember</button>
+            </div>
+          )}
+        </div>
       );
     });
   };

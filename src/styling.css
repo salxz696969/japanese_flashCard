@@ -157,12 +157,20 @@
 }
 #study button{
     margin-bottom: 5px;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    border: none;
+    font-size: 1.25rem;
+}
+#study div{
+    margin-bottom: 5px;
     width: 49%;
     height: 125px;
     background-color: white;
     border: 1px solid gray;
     border-radius: 10px;
-    overflow: scroll;
-    scrollbar-width: none;
     font-size: 1.25rem;
+    box-sizing: border-box;
+    padding: 3px;
 }
