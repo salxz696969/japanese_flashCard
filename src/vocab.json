@@ -884,12 +884,15 @@
     { "back": "こうこう", "front": "senior high school" }
   ],
   "lesson16": [
+    { "back": "でんわします", "front": "phone" },
+    { "back": "けんがくします", "front": "visit some place for study" },
     { "back": "のります[でんしゃに~]", "front": "ride, get on [a train]" },
     { "back": "おります[でんしゃを~]", "front": "get off [a train]" },
     { "back": "のりかえます", "front": "change (trains, etc.)" },
     { "back": "あびます[シャワーを~]", "front": "take [a shower]" },
     { "back": "いれます", "front": "put in, insert" },
-    { "back": "だします", "front": "take out, withdraw" },
+    { "back": "だします", "front": "take out, hand in, send" },
+    { "back": "おろします", "front": "withdraw" },
     { "back": "はいります[だいがくに~]", "front": "enter [university]" },
     { "back": "でます[だいがくを~]", "front": "graduate from [university]" },
     {
@@ -914,6 +917,7 @@
     { "back": "は", "front": "tooth" },
     { "back": "おなか", "front": "stomach" },
     { "back": "あし", "front": "leg, foot" },
+    { "back": "せ", "front": "height" },
     { "back": "サービス", "front": "service" },
     { "back": "ジョギング", "front": "jogging (~をします :jog)" },
     { "back": "シャワー", "front": "shower" },
