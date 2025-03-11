@@ -2009,5 +2009,18 @@
       "back": "じゅっきょく",
       "front": "10 choruses"
     }
+  ],
+  "date": [
+    { "back": "ついたち", "front": "1st" },
+    { "back": "ふつか", "front": "2nd" },
+    { "back": "みっか", "front": "3rd" },
+    { "back": "よっか", "front": "4th" },
+    { "back": "いつか", "front": "5th" },
+    { "back": "むいか", "front": "6th" },
+    { "back": "なのか", "front": "7th" },
+    { "back": "ようか", "front": "8th" },
+    { "back": "ここのか", "front": "9th" },
+    { "back": "とおか", "front": "10th" },
+    { "back": "はつか", "front": "20th" }
   ]
 }

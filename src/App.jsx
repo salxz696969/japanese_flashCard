@@ -54,6 +54,19 @@ const App = () => {
   };
 
   useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.ctrlKey&& e.altKey && e.key === "m") {
+        setMode((prevMode) => (prevMode === "quiz" ? "study" : "quiz"));
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, []);
+
+  useEffect(() => {
     const handleClickOutside = (event) => {
       if (!event.target.closest(".context-menu")) {
         setActiveIndex(null);
@@ -134,6 +147,9 @@ const App = () => {
   }
 
   function checkAnswer() {
+    if (frontOrBack === "back") {
+      setFrontOrBack("front");
+    }
     if (answer === flashCard[cardID]["back"]) {
       setAnswerColor("green");
       setAnswer("");
@@ -145,6 +161,9 @@ const App = () => {
   }
 
   function backWard() {
+    if (frontOrBack === "back") {
+      setFrontOrBack("front");
+    }
     if (normalOrRemember === "normal") {
       if (cardID === 0) {
         setCardID(cardID);
@@ -161,6 +180,9 @@ const App = () => {
     setAnswerColor("");
   }
   function forward() {
+    if (frontOrBack === "back") {
+      setFrontOrBack("front");
+    }
     if (normalOrRemember === "remember") {
       if (remCardID === rememberList.length - 1) {
         setRemCardID(remCardID);
@@ -180,6 +202,18 @@ const App = () => {
     if (e.key === "Enter" && normalOrRemember === "normal") {
       checkAnswer();
     }
+    
+    if (e.key === "Enter" && normalOrRemember === "normal") {
+      checkAnswer();
+    } else if (e.key === "ArrowLeft") {
+      backWard();
+    } else if (e.key === "ArrowRight") {
+      forward();
+    }
+    if (e.ctrlKey && e.altKey && e.key === "s") {
+      shuffle();
+    }
+
   };
   const quiz = () => {
     return (
@@ -343,7 +377,8 @@ const App = () => {
         <option value="lesson23">Lesson 23</option>
         <option value="lesson24">Lesson 24</option>
         <option value="lesson25">Lesson 25</option>
-        <option value="counting">counting</option>
+        <option value="counting">Counting</option>
+        <option value="date">Date</option>
       </select>
       <div id="show">
         {mode === "quiz" ? quiz() : <div id="study">{study()}</div>}
