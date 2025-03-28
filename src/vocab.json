@@ -7,16 +7,16 @@
     { "back": "あのかた", "front": "polite equivalent of あのひと" },
     { "back": "みなさん", "front": "ladies and gentlemen, all of you" },
     {
-      "back": "〜さん",
+      "back": "~さん",
       "front": "Mr., Ms. (title of respect added to a name)"
     },
     {
-      "back": "〜ちゃん",
-      "front": "(suffix often added to a child's name instead of 〜さん)"
+      "back": "~ちゃん",
+      "front": "(suffix often added to a child's name instead of ~さん)"
     },
-    { "back": "〜くん", "front": "(suffix often added to a boy's name)" },
+    { "back": "~くん", "front": "(suffix often added to a boy's name)" },
     {
-      "back": "〜じん",
+      "back": "~じん",
       "front": "(suffix meaning 'a national of'; e.g., アメリカじん, an American)"
     },
     {
@@ -28,7 +28,7 @@
     { "back": "かいしゃいん", "front": "company employee" },
     {
       "back": "しゃいん",
-      "front": "employee of ～ Company (used with a company's name; e.g., IMC のしゃいん)"
+      "front": "employee of ~ Company (used with a company's name; e.g., IMC のしゃいん)"
     },
     { "back": "ぎんこういん", "front": "bank employee" },
     { "back": "いしゃ", "front": "medical doctor" },
@@ -39,7 +39,7 @@
     { "back": "でんき", "front": "electricity, light" },
     { "back": "だれ", "front": "who" },
     { "back": "どなた", "front": "polite equivalent of だれ" },
-    { "back": "〜さい", "front": "～ years old" },
+    { "back": "~さい", "front": "~ years old" },
     { "back": "なんさい", "front": "how old" },
     { "back": "おいくつ", "front": "polite equivalent of なんさい" },
     { "back": "はい", "front": "yes" },
@@ -51,8 +51,8 @@
       "back": "どうぞよろしく おねがいします",
       "front": "Pleased to meet you."
     },
-    { "back": "こちらは〜さんです。", "front": "This is Mr./Ms. ～." },
-    { "back": "〜からきました", "front": "I came (come) from ～." }
+    { "back": "こちらは~さんです。", "front": "This is Mr./Ms. ~." },
+    { "back": "~からきました", "front": "I came (come) from ~." }
   ],
   "lesson2": [
     { "back": "これ", "front": "this (thing near the speaker)" },
@@ -64,9 +64,9 @@
       "back": "あれ",
       "front": "that (thing far from both the speaker and listener)"
     },
-    { "back": "この～", "front": "this ～, this ～ here" },
-    { "back": "その～", "front": "that ～, that ～ near you" },
-    { "back": "あの～", "front": "that ～, that ～ over there" },
+    { "back": "この~", "front": "this ~, this ~ here" },
+    { "back": "その~", "front": "that ~, that ~ near you" },
+    { "back": "あの~", "front": "that ~, that ~ over there" },
     { "back": "ほん", "front": "book" },
     { "back": "じしょ", "front": "dictionary" },
     { "back": "ざっし", "front": "magazine" },
@@ -99,7 +99,7 @@
     { "back": "コーヒー", "front": "coffee" },
     { "back": "えいご", "front": "the English language" },
     { "back": "にほんご", "front": "the Japanese language" },
-    { "back": "～ご", "front": "～ language" },
+    { "back": "~ご", "front": "~ language" },
     { "back": "なん", "front": "what" },
     { "back": "そう", "front": "so" },
     { "back": "ちがいます", "front": "No, it isn't. You are wrong." },
@@ -164,21 +164,21 @@
       "front": "department, counter (in a department store)"
     },
     { "back": "ちか 地下", "front": "basement" },
-    { "back": "〜かい(〜がい) 〜階", "front": "～th floor" },
+    { "back": "~かい(~がい) ~階", "front": "~th floor" },
     { "back": "なんがい 何階", "front": "what floor" },
-    { "back": "〜えん 〜円", "front": "～yen" },
+    { "back": "~えん ~円", "front": "~yen" },
     { "back": "いくら 幾ら", "front": "how much" },
     { "back": "ひゃく 百", "front": "hundred" },
     { "back": "せん 千", "front": "thousand" },
     { "back": "まん 万", "front": "ten thousand" },
     { "back": "すみません。", "front": "Excuse me." },
-    { "back": "～でございます。", "front": "(polite equivalent of です)" },
+    { "back": "~でございます。", "front": "(polite equivalent of です)" },
     {
-      "back": "[～を] みせてください。 [～を] 見せてください。",
-      "front": "Please show me [～]."
+      "back": "[~を] みせてください。 [~を] 見せてください。",
+      "front": "Please show me [~]."
     },
     { "back": "じゃ", "front": "well, then, in that case" },
-    { "back": "[～を]くだざい。", "front": "Give me [～], please." }
+    { "back": "[~を]くだざい。", "front": "Give me [~], please." }
   ],
   "lesson4": [
     { "back": "おきます", "front": "get up, wake up" },
@@ -193,8 +193,8 @@
     { "back": "としょかん", "front": "library" },
     { "back": "びじゅつかん", "front": "art museum" },
     { "back": "いま", "front": "now" },
-    { "back": "～じ", "front": "～o'clock" },
-    { "back": "～ふん (〜ぷん)", "front": "～minute" },
+    { "back": "~じ", "front": "~o'clock" },
+    { "back": "~ふん (~ぷん)", "front": "~minute" },
     { "back": "はん", "front": "half" },
     { "back": "なんじ", "front": "what time" },
     { "back": "なんぷん", "front": "what minute" },
@@ -225,9 +225,9 @@
     { "back": "なんようび", "front": "what day of the week" },
     { "back": "ばんごう", "front": "number" },
     { "back": "なんばん", "front": "what number" },
-    { "back": "～から", "front": "from ～" },
-    { "back": "～まで", "front": "up to ～, until ～" },
-    { "back": "～と～", "front": "and (used to connect nouns)" },
+    { "back": "~から", "front": "from ~" },
+    { "back": "~まで", "front": "up to ~, until ~" },
+    { "back": "~と~", "front": "and (used to connect nouns)" },
     { "back": "そちら", "front": "your place" },
     {
       "back": "たいへんですね",
@@ -277,7 +277,7 @@
     { "back": "きょねん", "front": "last year" },
     { "back": "ことし", "front": "this year" },
     { "back": "らいねん", "front": "next year" },
-    { "back": "～がつ", "front": "～th month of the year" },
+    { "back": "~がつ", "front": "~th month of the year" },
     { "back": "なんがつ", "front": "what month" },
     { "back": "ついたち", "front": "first day of the month" },
     { "back": "ふつか", "front": "second, two days" },
@@ -292,7 +292,7 @@
     { "back": "じゅうよっか", "front": "fourteenth, fourteen days" },
     { "back": "はつか", "front": "twentieth, twenty days" },
     { "back": "にじゅうよっか", "front": "twenty fourth, twenty four days" },
-    { "back": "～にち", "front": "～th day of the month, ～days" },
+    { "back": "~にち", "front": "~th day of the month, ~days" },
     { "back": "なんにち", "front": "which day of the month, how many days" },
     { "back": "いつ", "front": "when" },
     { "back": "たんじょうび", "front": "birthday" },
@@ -304,20 +304,20 @@
       "back": "どういたしまして",
       "front": "You're welcome./Don't mention it."
     },
-    { "back": "～ばんせん", "front": "platform ～, ～th platform" }
+    { "back": "~ばんせん", "front": "platform ~, ~th platform" }
   ],
   "lesson6": [
     { "back": "たべます", "front": "eat" },
     { "back": "のみます", "front": "drink" },
-    { "back": "すいます[たばこを～]", "front": "smoke [a cigarette]" },
+    { "back": "すいます[たばこを~]", "front": "smoke [a cigarette]" },
     { "back": "みます", "front": "see, look at, watch" },
     { "back": "ききます", "front": "hear, listen" },
     { "back": "よみます", "front": "read" },
     { "back": "かきます", "front": "write, draw, paint" },
     { "back": "かいます", "front": "buy" },
-    { "back": "とります[しゃしんを～]", "front": "take [a photograph]" },
+    { "back": "とります[しゃしんを~]", "front": "take [a photograph]" },
     { "back": "します", "front": "do" },
-    { "back": "あいます[ともだちに～]", "front": "meet [a friend]" },
+    { "back": "あいます[ともだちに~]", "front": "meet [a friend]" },
     { "back": "ごはん", "front": "a meal, cooked rice" },
     { "back": "あさごはん", "front": "breakfast" },
     { "back": "ひるごはん", "front": "lunch" },
@@ -344,15 +344,15 @@
     { "back": "みせ", "front": "store, shop" },
     { "back": "レストラン", "front": "restaurant" },
     { "back": "にわ", "front": "garden" },
-    { "back": "しゅくだい", "front": "homework (～をします: do homework)" },
+    { "back": "しゅくだい", "front": "homework (~をします: do homework)" },
     { "back": "テニス", "front": "tennis" },
     {
       "back": "サッカー",
-      "front": "soccer, football (～をします: play soccer)"
+      "front": "soccer, football (~をします: play soccer)"
     },
     {
       "back": "[お]はなみ",
-      "front": "cherry-blossom viewing (～をします: go cherry-blossom viewing)"
+      "front": "cherry-blossom viewing (~をします: go cherry-blossom viewing)"
     },
     { "back": "なに", "front": "what" },
     { "back": "いっしょに", "front": "together" },
@@ -375,7 +375,7 @@
     { "back": "かります", "front": "borrow" },
     { "back": "おしえます", "front": "teach" },
     { "back": "ならいます", "front": "learn" },
-    { "back": "かけます[でんわを～]", "front": "make [a telephone call]" },
+    { "back": "かけます[でんわを~]", "front": "make [a telephone call]" },
     { "back": "て", "front": "hand, arm" },
     { "back": "はし", "front": "chopsticks" },
     { "back": "スプーン", "front": "spoon" },
@@ -404,7 +404,7 @@
     { "back": "もう", "front": "already" },
     { "back": "まだ", "front": "not yet" },
     { "back": "これから", "front": "from now on, soon" },
-    { "back": "[～、]すてきです ね", "front": "What a nice [～]!" },
+    { "back": "[~、]すてきです ね", "front": "What a nice [~]!" },
     {
       "back": "ごめんください",
       "front": "Excuse me./Anybody home?/May I come in?"
@@ -419,8 +419,8 @@
       "front": "Thank you./May I? (lit. I'm afraid I will be disturbing you.)"
     },
     {
-      "back": "[～は]いかがですか",
-      "front": "Won't you have [～]?/Would you like to have [～]?"
+      "back": "[~は]いかがですか",
+      "front": "Won't you have [~]?/Would you like to have [~]?"
     },
     {
       "back": "いただきます",
@@ -473,15 +473,15 @@
     { "back": "せいかつ", "front": "life" },
     {
       "back": "[お]しごと",
-      "front": "work, business (～おしごとをします: do one's job, work)"
+      "front": "work, business (~おしごとをします: do one's job, work)"
     },
     { "back": "どう", "front": "how" },
-    { "back": "どんな～", "front": "what kind of ～" },
+    { "back": "どんな~", "front": "what kind of ~" },
     { "back": "どれ", "front": "which one (of three or more)" },
     { "back": "とても", "front": "very" },
     { "back": "あまり", "front": "not so (used with negatives)" },
     { "back": "そして", "front": "and (used to connect sentences)" },
-    { "back": "～が、～", "front": "～, but ～" },
+    { "back": "~が、~", "front": "~, but ~" },
     { "back": "おげんきですか", "front": "How are you?" },
     { "back": "そうですね", "front": "Well let me see. (pausing)" },
     {
@@ -489,11 +489,11 @@
       "front": "Have you got used to the life in Japan?"
     },
     {
-      "back": "[～、]もういっぱいいかがですか",
-      "front": "Won't you have another cup of [～]?"
+      "back": "[~、]もういっぱいいかがですか",
+      "front": "Won't you have another cup of [~]?"
     },
     { "back": "いいえ、けっこうです", "front": "No, thank you." },
-    { "back": "もう～です[ね]", "front": "It's already ～ [, isn't it?]" },
+    { "back": "もう~です[ね]", "front": "It's already ~ [, isn't it?]" },
     {
       "back": "そろそろしつれいします",
       "front": "It's almost time to leave now."
@@ -509,9 +509,9 @@
     { "back": "へた[な]", "front": "poor at" },
     { "back": "りょうり", "front": "dish (cooked food), cooking" },
     { "back": "のみもの", "front": "drinks" },
-    { "back": "スポーツ", "front": "sport (～をします: play sports)" },
-    { "back": "やきゅう", "front": "baseball (～をします: play baseball)" },
-    { "back": "ダンス", "front": "dance (～をします: dance)" },
+    { "back": "スポーツ", "front": "sport (~をします: play sports)" },
+    { "back": "やきゅう", "front": "baseball (~をします: play baseball)" },
+    { "back": "ダンス", "front": "dance (~をします: dance)" },
     { "back": "おんがく", "front": "music" },
     { "back": "うた", "front": "song" },
     { "back": "クラシック", "front": "classical music" },
@@ -544,7 +544,7 @@
     { "back": "すこし", "front": "a little, a few" },
     { "back": "ぜんぜん", "front": "not at all (used with negatives)" },
     { "back": "はやく", "front": "early, quickly, fast" },
-    { "back": "～から", "front": "because ～" },
+    { "back": "~から", "front": "because ~" },
     { "back": "どうして", "front": "why" },
     {
       "back": "ぎんねんです[ね]",
@@ -555,8 +555,8 @@
     { "back": "ああ", "front": "oh" },
     { "back": "いっしょにいかがですか", "front": "Won't you join me (us)?" },
     {
-      "back": "[～は]ちょっと...",
-      "front": "[～] is a bit difficult. (an euphemism used when declining an invitation)"
+      "back": "[~は]ちょっと...",
+      "front": "[~] is a bit difficult. (an euphemism used when declining an invitation)"
     },
     { "back": "だめですか", "front": "So you cannot (come)?" },
     {
@@ -597,7 +597,7 @@
     { "back": "こうえん", "front": "park" },
     { "back": "きっさてん", "front": "coffee shop" },
     { "back": "ほんや", "front": "bookstore" },
-    { "back": "～や", "front": "～ store" },
+    { "back": "~や", "front": "~ store" },
     {
       "back": "のりば",
       "front": "a fixed place to catch taxis, trains, etc."
@@ -614,11 +614,11 @@
     { "back": "となり", "front": "next, next door" },
     { "back": "ちかく", "front": "near, vicinity" },
     { "back": "あいだ", "front": "between, among" },
-    { "back": "～や～[など]", "front": "～, ～, and so on" },
-    { "back": "いちばん～", "front": "the most ～ (いちばん うえ: the top)" },
+    { "back": "~や~[など]", "front": "~, ~, and so on" },
+    { "back": "いちばん~", "front": "the most ~ (いちばん うえ: the top)" },
     {
-      "back": "～だんめ",
-      "front": "the ～th shelf (だん is the counter for shelves)"
+      "back": "~だんめ",
+      "front": "the ~th shelf (だん is the counter for shelves)"
     },
     { "back": "[どうも]すみません。", "front": "Thank you." },
     { "back": "チリソース", "front": "chilli sauce" },
@@ -644,10 +644,10 @@
     { "back": "いくつ", "front": "how many" },
     { "back": "ひとり", "front": "one person" },
     { "back": "ふたり", "front": "two people" },
-    { "back": "にん", "front": "～ people" },
+    { "back": "にん", "front": "~ people" },
     { "back": "だい", "front": "counter for machines, cars, etc." },
     { "back": "まい", "front": "counter for paper, stamps, etc." },
-    { "back": "かい", "front": "～ times" },
+    { "back": "かい", "front": "~ times" },
     { "back": "りんご", "front": "apple" },
     { "back": "みかん", "front": "mandarin orange" },
     { "back": "サンドイッチ", "front": "sandwich" },
@@ -671,22 +671,22 @@
     { "back": "いもうと", "front": "(my) younger sister" },
     { "back": "いもうとさん", "front": "(someone else's) younger sister" },
     { "back": "がいこく", "front": "foreign country" },
-    { "back": "じかん", "front": "～ hours" },
-    { "back": "しゅうかん", "front": "～ weeks" },
-    { "back": "かげつ", "front": "～ months" },
-    { "back": "ねん", "front": "～ years" },
-    { "back": "ぐらい", "front": "about ～" },
+    { "back": "じかん", "front": "~ hours" },
+    { "back": "しゅうかん", "front": "~ weeks" },
+    { "back": "かげつ", "front": "~ months" },
+    { "back": "ねん", "front": "~ years" },
+    { "back": "ぐらい", "front": "about ~" },
     { "back": "どのくらい", "front": "how long" },
     { "back": "ぜんぶで", "front": "in total" },
     { "back": "みんな", "front": "all, everything" },
-    { "back": "だけ", "front": "only ～" },
+    { "back": "だけ", "front": "only ~" },
     {
       "back": "いらっしゃいませ。",
       "front": "Welcome./May I help you? (a greeting to a customer or a guest entering a shop, etc.)"
     },
     { "back": "いいおてんきですね。", "front": "Nice weather, isn't it?" },
     { "back": "おでかけですか。", "front": "Are you going out?" },
-    { "back": "ちょっと～まで。", "front": "I'm just going to ～." },
+    { "back": "ちょっと~まで。", "front": "I'm just going to ~." },
     {
       "back": "いっていらっしゃい",
       "front": "So long. (lit. Go and come back.)"
@@ -703,15 +703,15 @@
     { "back": "とおい", "front": "far" },
     { "back": "はやい", "front": "fast, early" },
     { "back": "おそい", "front": "slow, late" },
-    { "back": "おおい[ひとが～]", "front": "many [people], much" },
-    { "back": "すくない[ひとが～]", "front": "few [people], a little" },
+    { "back": "おおい[ひとが~]", "front": "many [people], much" },
+    { "back": "すくない[ひとが~]", "front": "few [people], a little" },
     { "back": "あたたかい", "front": "warm" },
     { "back": "すずしい", "front": "cool" },
     { "back": "あまい", "front": "sweet" },
     { "back": "からい", "front": "hot (taste), spicy" },
     { "back": "おもい", "front": "heavy" },
     { "back": "かるい", "front": "light" },
-    { "back": "いい[コーヒーが～]", "front": "prefer[coffee]" },
+    { "back": "いい[コーヒーが~]", "front": "prefer[coffee]" },
     { "back": "きせつ", "front": "season" },
     { "back": "はる", "front": "spring" },
     { "back": "なつ", "front": "summer" },
@@ -740,7 +740,7 @@
     },
     {
       "back": "いけばな",
-      "front": "flower arrangement (～をします: practice flower arrangement)"
+      "front": "flower arrangement (~をします: practice flower arrangement)"
     },
     { "back": "もみじ", "front": "maple, red leaves of autumn" },
     { "back": "どちら", "front": "which one (between two things)" },
@@ -758,13 +758,13 @@
     { "back": "およぎます", "front": "swim" },
     { "back": "むかえます", "front": "go to meet, welcome" },
     { "back": "つかれます", "front": "get tired" },
-    { "back": "だします[てがみを～]", "front": "send [a letter]" },
-    { "back": "はいります[きっさてんに～]", "front": "enter [a coffee shop]" },
-    { "back": "でます[きっさてんを～]", "front": "go out [of a coffee shop]" },
+    { "back": "だします[てがみを~]", "front": "send [a letter]" },
+    { "back": "はいります[きっさてんに~]", "front": "enter [a coffee shop]" },
+    { "back": "でます[きっさてんを~]", "front": "go out [of a coffee shop]" },
     { "back": "けっこんします", "front": "marry, get married" },
     { "back": "かいものします", "front": "do shopping" },
     { "back": "しょくじします", "front": "have a meal, dine" },
-    { "back": "さんぽします[こうえんを～]", "front": "take a walk [in a park]" },
+    { "back": "さんぽします[こうえんを~]", "front": "take a walk [in a park]" },
     { "back": "たいへん[な]", "front": "hard, tough, severe, awful" },
     { "back": "ほしい", "front": "want (something)" },
     { "back": "さびしい", "front": "lonely" },
@@ -775,15 +775,15 @@
     { "back": "かわ", "front": "river" },
     { "back": "けいざい", "front": "economy" },
     { "back": "びじゅつ", "front": "fine arts" },
-    { "back": "つり", "front": "fishing (～をします: fish, angle)" },
-    { "back": "スキー", "front": "skiing (～をします: ski)" },
+    { "back": "つり", "front": "fishing (~をします: fish, angle)" },
+    { "back": "スキー", "front": "skiing (~をします: ski)" },
     {
       "back": "かいぎ",
-      "front": "meeting, conference (～をします: hold a conference)"
+      "front": "meeting, conference (~をします: hold a conference)"
     },
-    { "back": "とうろく", "front": "registration (～をします: register)" },
+    { "back": "とうろく", "front": "registration (~をします: register)" },
     { "back": "しゅうまつ", "front": "weekend" },
-    { "back": "～ごろ", "front": "about (time)" },
+    { "back": "~ごろ", "front": "about (time)" },
     { "back": "なにか", "front": "something" },
     { "back": "どこか", "front": "somewhere, some place" },
     { "back": "おなかがすきました。", "front": "(I'm) hungry." },
@@ -811,16 +811,16 @@
     { "back": "いそぎます", "front": "hurry" },
     { "back": "まちます", "front": "wait" },
     { "back": "とめます", "front": "stop, park" },
-    { "back": "まがります[みぎへ～]", "front": "turn [to the right]" },
+    { "back": "まがります[みぎへ~]", "front": "turn [to the right]" },
     { "back": "もちます", "front": "hold" },
     { "back": "とります", "front": "take, pass" },
     { "back": "てつだいます", "front": "help (with a task)" },
     { "back": "よびます", "front": "call" },
     { "back": "はなします", "front": "speak, talk" },
     { "back": "みせます", "front": "show" },
-    { "back": "おしえます[じゅうしょを～]", "front": "tell [an address]" },
+    { "back": "おしえます[じゅうしょを~]", "front": "tell [an address]" },
     { "back": "はじめます", "front": "start, begin" },
-    { "back": "ふります[あめが～]", "front": "rain" },
+    { "back": "ふります[あめが~]", "front": "rain" },
     { "back": "コピーします", "front": "copy" },
     { "back": "エアコン", "front": "air conditioner" },
     { "back": "パスポート", "front": "passport" },
@@ -830,13 +830,13 @@
     { "back": "しお", "front": "salt" },
     { "back": "さとう", "front": "sugar" },
     { "back": "よみかた", "front": "how to read, way of reading" },
-    { "back": "～かた", "front": "how to ～, way of ～ing" },
+    { "back": "~かた", "front": "how to ~, way of ~ing" },
     { "back": "ゆっくり", "front": "slowly, leisurely" },
     { "back": "すぐ", "front": "immediately" },
     { "back": "また", "front": "again" },
     { "back": "あとで", "front": "later" },
     { "back": "もうすこし", "front": "a little more" },
-    { "back": "もう～", "front": "～ more, another ～" },
+    { "back": "もう~", "front": "~ more, another ~" },
     { "back": "いいですよ。", "front": "Sure. / Certainly" },
     {
       "back": "さあ",
@@ -862,7 +862,7 @@
     { "back": "すみます", "front": "be going to live" },
     { "back": "けんきゅうします", "front": "do research" },
     { "back": "しっています", "front": "know" },
-    { "back": "すんでいます[おおさかに～]", "front": "live [in Osaka]" },
+    { "back": "すんでいます[おおさかに~]", "front": "live [in Osaka]" },
     { "back": "しりょう", "front": "materials, data" },
     { "back": "カタログ", "front": "catalog" },
     { "back": "じこくひょう", "front": "timetable" },
@@ -886,17 +886,17 @@
   "lesson16": [
     { "back": "でんわします", "front": "phone" },
     { "back": "けんがくします", "front": "visit some place for study" },
-    { "back": "のります[でんしゃに～]", "front": "ride, get on [a train]" },
-    { "back": "おります[でんしゃを～]", "front": "get off [a train]" },
+    { "back": "のります[でんしゃに~]", "front": "ride, get on [a train]" },
+    { "back": "おります[でんしゃを~]", "front": "get off [a train]" },
     { "back": "のりかえます", "front": "change (trains, etc.)" },
-    { "back": "あびます[シャワーを～]", "front": "take [a shower]" },
+    { "back": "あびます[シャワーを~]", "front": "take [a shower]" },
     { "back": "いれます", "front": "put in, insert" },
     { "back": "だします", "front": "take out, hand in, send" },
     { "back": "おろします", "front": "withdraw" },
-    { "back": "はいります[だいがくに～]", "front": "enter [university]" },
-    { "back": "でます[だいがくを～]", "front": "graduate from [university]" },
+    { "back": "はいります[だいがくに~]", "front": "enter [university]" },
+    { "back": "でます[だいがくを~]", "front": "graduate from [university]" },
     {
-      "back": "やめます[かいしゃを～]",
+      "back": "やめます[かいしゃを~]",
       "front": "quit or retire from [a company], stop, give up"
     },
     { "back": "おします", "front": "press, push" },
@@ -919,15 +919,15 @@
     { "back": "あし", "front": "leg, foot" },
     { "back": "せ", "front": "height" },
     { "back": "サービス", "front": "service" },
-    { "back": "ジョギング", "front": "jogging (～をします :jog)" },
+    { "back": "ジョギング", "front": "jogging (~をします :jog)" },
     { "back": "シャワー", "front": "shower" },
     { "back": "みどり", "front": "green, greenery" },
     { "back": "[お]てら", "front": "Buddhist temple" },
     { "back": "[お]じんじゃ", "front": "Shinto shrine" },
     { "back": "りゅうがくせい", "front": "foreign student" },
-    { "back": "～ばん", "front": "number ～" },
+    { "back": "~ばん", "front": "number ~" },
     { "back": "どうやって", "front": "in what way, how" },
-    { "back": "どの～", "front": "which ～ (used for three or more)" },
+    { "back": "どの~", "front": "which ~ (used for three or more)" },
     {
       "back": "[いいえ、]まだまだです。",
       "front": "[No,] I still have a long way to go."
@@ -941,14 +941,14 @@
     },
     { "back": "つぎに", "front": "next, as a next step" },
     { "back": "きんがく", "front": "amount of money" },
-    { "back": "かくにん", "front": "confirmation (～します: confirm)" },
+    { "back": "かくにん", "front": "confirmation (~します: confirm)" },
     { "back": "ボタン", "front": "button" }
   ],
   "lesson17": [
     { "back": "おぼえます", "front": "memorise" },
     { "back": "わすれます", "front": "forget" },
     { "back": "なくします", "front": "lose" },
-    { "back": "だします[レポートを～]", "front": "hand in [a report]" },
+    { "back": "だします[レポートを~]", "front": "hand in [a report]" },
     { "back": "はらいます", "front": "pay" },
     { "back": "かえします", "front": "give back, return" },
     { "back": "でかけます", "front": "go out" },
@@ -964,8 +964,8 @@
     { "back": "しんぱいします", "front": "worry" },
     { "back": "ざんぎょうします", "front": "work overtime" },
     { "back": "しゅっちょうします", "front": "go on a business trip" },
-    { "back": "のみます[くすりを～]", "front": "take [medicine]" },
-    { "back": "はいります[おふろに～]", "front": "take [a bath]" },
+    { "back": "のみます[くすりを~]", "front": "take [medicine]" },
+    { "back": "はいります[おふろに~]", "front": "take [a bath]" },
     { "back": "たいせつ[な]", "front": "important, precious" },
     { "back": "だいじょうぶ[な]", "front": "all right" },
     { "back": "あぶない", "front": "dangerous" },
@@ -985,11 +985,11 @@
       "front": "doctor (used when addressing a medical doctor)"
     },
     { "back": "2、3にち", "front": "a few days" },
-    { "back": "2、3～", "front": "a few ～ (～ is a counter suffix)" },
-    { "back": "～までに", "front": "before ～, by ～ (indicating time limit)" },
+    { "back": "2、3~", "front": "a few ~ (~ is a counter suffix)" },
+    { "back": "~までに", "front": "before ~, by ~ (indicating time limit)" },
     { "back": "ですから", "front": "therefore, so" },
     { "back": "どうしましたか。", "front": "What's the matter?" },
-    { "back": "[～が]いたいです。", "front": "(I) have a pain [in my ～]." },
+    { "back": "[~が]いたいです。", "front": "(I) have a pain [in my ~]." },
     { "back": "のど", "front": "throat" },
     {
       "back": "おだいじに。",
@@ -1011,12 +1011,12 @@
     { "back": "よやくします", "front": "reserve, book" },
     { "back": "けんがくします", "front": "visit some place for study" },
     { "back": "ピアノ", "front": "piano" },
-    { "back": "～メートル", "front": "～ meter" },
-    { "back": "こくさい～", "front": "international ～" },
+    { "back": "~メートル", "front": "~ meter" },
+    { "back": "こくさい~", "front": "international ~" },
     { "back": "げんきん", "front": "cash" },
     { "back": "しゅみ", "front": "hobby" },
     { "back": "にっき", "front": "diary" },
-    { "back": "[お]いのり", "front": "prayer (～をします: pray)" },
+    { "back": "[お]いのり", "front": "prayer (~をします: pray)" },
     { "back": "かちょう", "front": "section chief" },
     { "back": "ぶちょう", "front": "department chief" },
     { "back": "しゃちょう", "front": "president of a company" },
@@ -1033,8 +1033,8 @@
     { "back": "ぜひ", "front": "by all means" }
   ],
   "lesson19": [
-    { "back": "のぼります[やまに～]", "front": "climb [a mountain]" },
-    { "back": "とまります[ホテルに～]", "front": "stay [at a hotel]" },
+    { "back": "のぼります[やまに~]", "front": "climb [a mountain]" },
+    { "back": "とまります[ホテルに~]", "front": "stay [at a hotel]" },
     { "back": "そうじします", "front": "clean (a room)" },
     { "back": "せんたくします", "front": "wash (clothes)" },
     { "back": "れんしゅうします", "front": "practice" },
@@ -1047,7 +1047,7 @@
     { "back": "ちょうし", "front": "condition" },
     { "back": "ゴルフ", "front": "golf" },
     { "back": "すもう", "front": "sumo wrestling" },
-    { "back": "パチンコ", "front": "pinball game (～をします: play pachinko)" },
+    { "back": "パチンコ", "front": "pinball game (~をします: play pachinko)" },
     { "back": "おちゃ", "front": "tea ceremony" },
     { "back": "ひ", "front": "day, date" },
     { "back": "いちど", "front": "once" },
@@ -1060,7 +1060,7 @@
     },
     { "back": "かんぱい", "front": "Bottoms up./Cheers!" },
     { "back": "じつは", "front": "actually, to tell the truth" },
-    { "back": "ダイエット", "front": "diet (～をします: go on a diet)" },
+    { "back": "ダイエット", "front": "diet (~をします: go on a diet)" },
     { "back": "なんかいも", "front": "many times" },
     { "back": "しかし", "front": "but, however" },
     { "back": "むり[な]", "front": "excessive, impossible" },
@@ -1068,7 +1068,7 @@
     { "back": "ケーキ", "front": "cake" }
   ],
   "lesson20": [
-    { "back": "いります[ビザが～]", "front": "need, require [a visa]" },
+    { "back": "いります[ビザが~]", "front": "need, require [a visa]" },
     { "back": "しらべます", "front": "check, investigate" },
     { "back": "なおします", "front": "repair, correct" },
     { "back": "しゅうりします", "front": "repair" },
@@ -1082,8 +1082,8 @@
       "front": "you (an informal equivalent of あなた used by men)"
     },
     {
-      "back": "～くん",
-      "front": "Mr. (an informal equivalent of ～さん used by men)"
+      "back": "~くん",
+      "front": "Mr. (an informal equivalent of ~さん used by men)"
     },
     { "back": "うん", "front": "yes (an informal equivalent of はい)" },
     { "back": "ううん", "front": "no (an informal equivalent of いいえ)" },
@@ -1112,7 +1112,7 @@
     },
     { "back": "このあいだ", "front": "the other day" },
     { "back": "みんなで", "front": "all together" },
-    { "back": "～けど", "front": "～, but (an informal equivalent of が)" },
+    { "back": "~けど", "front": "~, but (an informal equivalent of が)" },
     {
       "back": "くにへかえるの?",
       "front": "Are you going back to your country?"
@@ -1129,7 +1129,7 @@
     { "back": "かちます", "front": "win" },
     { "back": "まけます", "front": "lose, be beaten" },
     {
-      "back": "あります[おまつりが～]",
+      "back": "あります[おまつりが~]",
       "front": "[a festival] be held, take place"
     },
     { "back": "やくにたちます", "front": "be useful" },
@@ -1163,13 +1163,13 @@
     { "back": "きっと", "front": "surely, definitely" },
     { "back": "ほんとうに", "front": "really" },
     { "back": "そんない", "front": "not so(used with negatives)" },
-    { "back": "～について", "front": "about～, concerning～" }
+    { "back": "~について", "front": "about~, concerning~" }
   ],
   "lesson22": [
-    { "back": "きます[シャツを～]", "front": "put on [a shirt, etc.]" },
-    { "back": "はきます[くつを～]", "front": "put on [shoes, trousers, etc.]" },
-    { "back": "かぶります[ぼうしを～]", "front": "put on [a hat, etc.]" },
-    { "back": "かけます[めがねを～]", "front": "put on [glasses]" },
+    { "back": "きます[シャツを~]", "front": "put on [a shirt, etc.]" },
+    { "back": "はきます[くつを~]", "front": "put on [shoes, trousers, etc.]" },
+    { "back": "かぶります[ぼうしを~]", "front": "put on [a hat, etc.]" },
+    { "back": "かけます[めがねを~]", "front": "put on [glasses]" },
     { "back": "うまれます", "front": "be born" },
     { "back": "コート", "front": "coat" },
     { "back": "スーツ", "front": "suit" },
@@ -1191,27 +1191,27 @@
     { "back": "アパート", "front": "apartment" }
   ],
   "lesson23": [
-    { "back": "ききます[せんせいに～]", "front": "ask [the teacher]" },
+    { "back": "ききます[せんせいに~]", "front": "ask [the teacher]" },
     { "back": "まわします", "front": "turn" },
     { "back": "ひきます", "front": "pull" },
     { "back": "かえます", "front": "change" },
-    { "back": "さわります[ドアに～]", "front": "touch [a door]" },
-    { "back": "でます[おつりが～]", "front": "[change] come out" },
-    { "back": "うごきます[とけいが～]", "front": "[a watch] move, work" },
-    { "back": "あるきます[みちを～]", "front": "walk [along a road]" },
-    { "back": "わたります[はしを～]", "front": "cross [a bridge]" },
+    { "back": "さわります[ドアに~]", "front": "touch [a door]" },
+    { "back": "でます[おつりが~]", "front": "[change] come out" },
+    { "back": "うごきます[とけいが~]", "front": "[a watch] move, work" },
+    { "back": "あるきます[みちを~]", "front": "walk [along a road]" },
+    { "back": "わたります[はしを~]", "front": "cross [a bridge]" },
     {
-      "back": "きをつけます[くるまに～]",
+      "back": "きをつけます[くるまに~]",
       "front": "pay attention [to cars], take care"
     },
     { "back": "ひっこしします", "front": "move (house)" },
     { "back": "でんきや", "front": "electrician" },
-    { "back": "～や", "front": "person of ～ shop" },
+    { "back": "~や", "front": "person of ~ shop" },
     { "back": "サイズ", "front": "size" },
     { "back": "おと", "front": "sound" },
     { "back": "きかい", "front": "machine" },
     { "back": "つまみ", "front": "knob" },
-    { "back": "こしょう", "front": "breakdown (～します: breakdown)" },
+    { "back": "こしょう", "front": "breakdown (~します: breakdown)" },
     { "back": "みち", "front": "road, way" },
     { "back": "こうさてん", "front": "crossroad" },
     { "back": "しんごう", "front": "traffic light" },
@@ -1231,16 +1231,16 @@
     { "back": "くれます", "front": "give (me)" },
     { "back": "つれていきます", "front": "take (someone)" },
     { "back": "つれてきます", "front": "bring (someone)" },
-    { "back": "おくります[ひとを～]", "front": "escort [someone], go with" },
+    { "back": "おくります[ひとを~]", "front": "escort [someone], go with" },
     { "back": "しょうかいします", "front": "introduce" },
     { "back": "あんないします", "front": "show around, show the way" },
     { "back": "せつめいします", "front": "explain" },
-    { "back": "いれます[コーヒーを～]", "front": "make [coffee]" },
+    { "back": "いれます[コーヒーを~]", "front": "make [coffee]" },
     { "back": "おじいさん", "front": "grandfather, old man" },
     { "back": "おじいちゃん", "front": "grandfather, old man" },
     { "back": "おばあさん", "front": "grandmother, old woman" },
     { "back": "おばあちゃん", "front": "grandmother, old woman" },
-    { "back": "じゅんび", "front": "preparation (～します: prepare)" },
+    { "back": "じゅんび", "front": "preparation (~します: prepare)" },
     { "back": "いみ", "front": "meaning" },
     { "back": "[お]かし", "front": "sweets, snacks" },
     { "back": "ぜんぶ", "front": "all" },
@@ -1251,21 +1251,21 @@
   ],
   "lesson25": [
     { "back": "かんがえます", "front": "think, consider" },
-    { "back": "つきます[えきに～]", "front": "arrive [at the station]" },
+    { "back": "つきます[えきに~]", "front": "arrive [at the station]" },
     { "back": "りゅうがくします", "front": "study abroad" },
-    { "back": "とります[としを～]", "front": "grow old" },
+    { "back": "とります[としを~]", "front": "grow old" },
     { "back": "いなか", "front": "countryside, hometown" },
     { "back": "たいしかん", "front": "embassy" },
     { "back": "グループ", "front": "group" },
     { "back": "チャンス", "front": "chance" },
     { "back": "おく", "front": "hundred million" },
-    { "back": "もし[～たら]", "front": "if ～" },
-    { "back": "いくら[～でも]", "front": "however ～, even if ～" },
+    { "back": "もし[~たら]", "front": "if ~" },
+    { "back": "いくら[~でも]", "front": "however ~, even if ~" },
     {
       "back": "てんきん",
-      "front": "transfer (～します: be transferred to another office)"
+      "front": "transfer (~します: be transferred to another office)"
     },
-    { "back": "こと", "front": "thing, matter (～のこと: thing about ～)" },
+    { "back": "こと", "front": "thing, matter (~のこと: thing about ~)" },
     {
       "back": "いっぱいのみましょう。",
       "front": "Let's have a drink together."
