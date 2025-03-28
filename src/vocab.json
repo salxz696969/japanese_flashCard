@@ -1164,42 +1164,6 @@
     { "back": "ほんとうに", "front": "really" },
     { "back": "そんない", "front": "not so(used with negatives)" },
     { "back": "～について", "front": "about～, concerning～" },
-    { "back": "しゅしょう", "front": "prime minister" },
-    { "back": "だいとうりょう", "front": "president" },
-    { "back": "せいじ", "front": "politics" },
-    { "back": "ニュース", "front": "news" },
-    { "back": "スピーチ", "front": "speech (～を します: make a speech)" },
-    { "back": "しあい", "front": "game, match" },
-    { "back": "アルバイト", "front": "side job (～を します: work part time)" },
-    { "back": "いけん", "front": "opinion" },
-    {
-      "back": "[お]はなし",
-      "front": "talk, speech, what one says, story (～を します: talk, tell a story)"
-    },
-    { "back": "ユーモア", "front": "humor" },
-    { "back": "デザイン", "front": "design" },
-    { "back": "こうつう", "front": "transportation, traffic" },
-    { "back": "ラッシュ", "front": "rush hour" },
-    { "back": "さいきん", "front": "recently, these days" },
-    { "back": "たぶん", "front": "probably, perhaps, maybe" },
-    { "back": "きっと", "front": "surely" },
-    { "back": "ほんとうに", "front": "really" },
-    { "back": "そんなに", "front": "not so much (used with negatives)" },
-    { "back": "～について", "front": "about ～, concerning ～" },
-    {
-      "back": "しかたがありません。",
-      "front": "There is no other choice. / It can't be helped."
-    },
-    {
-      "back": "しばらくですね。",
-      "front": "It's been a long time (since I last saw you). / Long time no see."
-    },
-    {
-      "back": "～でものみませんか。",
-      "front": "How about drinking ～ or something?"
-    },
-    { "back": "みないと...", "front": "I've got to watch it." },
-    { "back": "もちろん", "front": "of course" }
   ],
   "lesson22": [
     { "back": "きます[シャツを～]", "front": "put on [a shirt, etc.]" },
