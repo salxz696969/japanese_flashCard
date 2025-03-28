@@ -1132,6 +1132,7 @@
       "back": "あります[おまつりが~]",
       "front": "[a festival] be held, take place"
     },
+    { "back": "うごきます[とけいが~]", "front": "[a watch] move, work" },
     { "back": "やくにたちます", "front": "be useful" },
     { "back": "きをつけます", "front": "pay attention, take care" },
     { "back": "むだ[な]", "front": "wasteful" },
@@ -1197,7 +1198,6 @@
     { "back": "かえます", "front": "change" },
     { "back": "さわります[ドアに~]", "front": "touch [a door]" },
     { "back": "でます[おつりが~]", "front": "[change] come out" },
-    { "back": "うごきます[とけいが~]", "front": "[a watch] move, work" },
     { "back": "あるきます[みちを~]", "front": "walk [along a road]" },
     { "back": "わたります[はしを~]", "front": "cross [a bridge]" },
     {
